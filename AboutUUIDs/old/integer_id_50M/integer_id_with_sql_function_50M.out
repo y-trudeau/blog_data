@@ -1,0 +1,1983 @@
+---------- variables ---------
+auto_generate_certs	ON
+auto_increment_increment	1
+auto_increment_offset	1
+autocommit	ON
+automatic_sp_privileges	ON
+avoid_temporal_upgrade	OFF
+back_log	80
+basedir	/usr/
+big_tables	OFF
+bind_address	*
+binlog_cache_size	32768
+binlog_checksum	CRC32
+binlog_direct_non_transactional_updates	OFF
+binlog_error_action	ABORT_SERVER
+binlog_format	ROW
+binlog_group_commit_sync_delay	0
+binlog_group_commit_sync_no_delay_count	0
+binlog_gtid_simple_recovery	ON
+binlog_max_flush_queue_time	0
+binlog_order_commits	ON
+binlog_row_image	FULL
+binlog_rows_query_log_events	OFF
+binlog_skip_flush_commands	OFF
+binlog_space_limit	0
+binlog_stmt_cache_size	32768
+binlog_transaction_dependency_history_size	25000
+binlog_transaction_dependency_tracking	COMMIT_ORDER
+block_encryption_mode	aes-128-ecb
+bulk_insert_buffer_size	8388608
+character_set_client	latin1
+character_set_connection	latin1
+character_set_database	latin1
+character_set_filesystem	binary
+character_set_results	latin1
+character_set_server	latin1
+character_set_system	utf8
+character_sets_dir	/usr/share/mysql/charsets/
+check_proxy_users	OFF
+collation_connection	latin1_swedish_ci
+collation_database	latin1_swedish_ci
+collation_server	latin1_swedish_ci
+completion_type	NO_CHAIN
+concurrent_insert	AUTO
+connect_timeout	10
+core_file	OFF
+csv_mode	
+datadir	/var/lib/mysql/
+date_format	%Y-%m-%d
+datetime_format	%Y-%m-%d %H:%i:%s
+default_authentication_plugin	mysql_native_password
+default_password_lifetime	0
+default_storage_engine	InnoDB
+default_tmp_storage_engine	InnoDB
+default_week_format	0
+delay_key_write	ON
+delayed_insert_limit	100
+delayed_insert_timeout	300
+delayed_queue_size	1000
+disabled_storage_engines	
+disconnect_on_expired_password	ON
+div_precision_increment	4
+encrypt_binlog	OFF
+encrypt_tmp_files	OFF
+end_markers_in_json	OFF
+enforce_gtid_consistency	OFF
+enforce_storage_engine	
+eq_range_index_dive_limit	200
+event_scheduler	OFF
+expand_fast_index_creation	OFF
+expire_logs_days	0
+explicit_defaults_for_timestamp	ON
+extra_max_connections	1
+extra_port	0
+flush	OFF
+flush_time	0
+foreign_key_checks	ON
+ft_boolean_syntax	+ -><()~*:""&|
+ft_max_word_len	84
+ft_min_word_len	4
+ft_query_expansion_limit	20
+ft_query_extra_word_chars	OFF
+ft_stopword_file	(built-in)
+general_log	OFF
+general_log_file	/var/lib/mysql/toomuchdata.log
+group_concat_max_len	1024
+gtid_executed	
+gtid_executed_compression_period	1000
+gtid_mode	OFF
+gtid_owned	
+gtid_purged	
+have_backup_locks	YES
+have_backup_safe_binlog_info	YES
+have_compress	YES
+have_crypt	YES
+have_dynamic_loading	YES
+have_geometry	YES
+have_openssl	YES
+have_profiling	YES
+have_query_cache	YES
+have_rtree_keys	YES
+have_snapshot_cloning	YES
+have_ssl	YES
+have_statement_timeout	YES
+have_symlink	DISABLED
+host_cache_size	279
+hostname	toomuchdata
+ignore_builtin_innodb	OFF
+ignore_db_dirs	
+init_connect	
+init_file	
+init_slave	
+innodb_adaptive_flushing	ON
+innodb_adaptive_flushing_lwm	10
+innodb_adaptive_hash_index	ON
+innodb_adaptive_hash_index_parts	8
+innodb_adaptive_max_sleep_delay	150000
+innodb_api_bk_commit_interval	5
+innodb_api_disable_rowlock	OFF
+innodb_api_enable_binlog	OFF
+innodb_api_enable_mdl	OFF
+innodb_api_trx_level	0
+innodb_autoextend_increment	64
+innodb_autoinc_lock_mode	1
+innodb_background_scrub_data_check_interval	3600
+innodb_background_scrub_data_compressed	OFF
+innodb_background_scrub_data_interval	604800
+innodb_background_scrub_data_uncompressed	OFF
+innodb_buffer_pool_chunk_size	134217728
+innodb_buffer_pool_dump_at_shutdown	ON
+innodb_buffer_pool_dump_now	OFF
+innodb_buffer_pool_dump_pct	25
+innodb_buffer_pool_filename	ib_buffer_pool
+innodb_buffer_pool_instances	1
+innodb_buffer_pool_load_abort	OFF
+innodb_buffer_pool_load_at_startup	ON
+innodb_buffer_pool_load_now	OFF
+innodb_buffer_pool_size	1073741824
+innodb_change_buffer_max_size	25
+innodb_change_buffering	all
+innodb_checksum_algorithm	crc32
+innodb_checksums	ON
+innodb_cleaner_lsn_age_factor	high_checkpoint
+innodb_cmp_per_index_enabled	OFF
+innodb_commit_concurrency	0
+innodb_compressed_columns_threshold	96
+innodb_compressed_columns_zip_level	6
+innodb_compression_failure_threshold_pct	5
+innodb_compression_level	6
+innodb_compression_pad_pct_max	50
+innodb_concurrency_tickets	5000
+innodb_corrupt_table_action	assert
+innodb_data_file_path	ibdata1:12M:autoextend
+innodb_data_home_dir	
+innodb_deadlock_detect	ON
+innodb_default_encryption_key_id	0
+innodb_default_row_format	dynamic
+innodb_disable_sort_file_cache	OFF
+innodb_doublewrite	ON
+innodb_empty_free_list_algorithm	backoff
+innodb_encrypt_online_alter_logs	OFF
+innodb_encrypt_tables	OFF
+innodb_encryption_rotate_key_age	1
+innodb_encryption_rotation_iops	100
+innodb_encryption_threads	0
+innodb_fast_shutdown	1
+innodb_file_format	Barracuda
+innodb_file_format_check	ON
+innodb_file_format_max	Barracuda
+innodb_file_per_table	ON
+innodb_fill_factor	100
+innodb_flush_log_at_timeout	1
+innodb_flush_log_at_trx_commit	0
+innodb_flush_method	O_DIRECT
+innodb_flush_neighbors	0
+innodb_flush_sync	ON
+innodb_flushing_avg_loops	30
+innodb_force_load_corrupted	OFF
+innodb_force_recovery	0
+innodb_ft_aux_table	
+innodb_ft_cache_size	8000000
+innodb_ft_enable_diag_print	OFF
+innodb_ft_enable_stopword	ON
+innodb_ft_ignore_stopwords	OFF
+innodb_ft_max_token_size	84
+innodb_ft_min_token_size	3
+innodb_ft_num_word_optimize	2000
+innodb_ft_result_cache_limit	2000000000
+innodb_ft_server_stopword_table	
+innodb_ft_sort_pll_degree	2
+innodb_ft_total_cache_size	640000000
+innodb_ft_user_stopword_table	
+innodb_immediate_scrub_data_uncompressed	OFF
+innodb_io_capacity	200
+innodb_io_capacity_max	2000
+innodb_kill_idle_transaction	0
+innodb_large_prefix	ON
+innodb_lock_wait_timeout	50
+innodb_locks_unsafe_for_binlog	OFF
+innodb_log_buffer_size	16777216
+innodb_log_checksums	ON
+innodb_log_compressed_pages	ON
+innodb_log_file_size	268435456
+innodb_log_files_in_group	2
+innodb_log_group_home_dir	./
+innodb_log_write_ahead_size	8192
+innodb_lru_scan_depth	1024
+innodb_max_bitmap_file_size	104857600
+innodb_max_changed_pages	1000000
+innodb_max_dirty_pages_pct	75.000000
+innodb_max_dirty_pages_pct_lwm	0.000000
+innodb_max_purge_lag	0
+innodb_max_purge_lag_delay	0
+innodb_max_undo_log_size	1073741824
+innodb_monitor_disable	
+innodb_monitor_enable	
+innodb_monitor_reset	
+innodb_monitor_reset_all	
+innodb_numa_interleave	OFF
+innodb_old_blocks_pct	37
+innodb_old_blocks_time	1000
+innodb_online_alter_log_max_size	134217728
+innodb_open_files	431
+innodb_optimize_fulltext_only	OFF
+innodb_page_cleaners	1
+innodb_page_size	16384
+innodb_parallel_dblwr_encrypt	OFF
+innodb_parallel_doublewrite_path	xb_doublewrite
+innodb_print_all_deadlocks	OFF
+innodb_print_lock_wait_timeout_info	OFF
+innodb_purge_batch_size	300
+innodb_purge_rseg_truncate_frequency	128
+innodb_purge_threads	4
+innodb_random_read_ahead	OFF
+innodb_read_ahead_threshold	56
+innodb_read_io_threads	4
+innodb_read_only	OFF
+innodb_redo_log_encrypt	off
+innodb_replication_delay	0
+innodb_rollback_on_timeout	OFF
+innodb_rollback_segments	128
+innodb_scrub_log	OFF
+innodb_scrub_log_speed	256
+innodb_show_locks_held	10
+innodb_show_verbose_locks	0
+innodb_sort_buffer_size	1048576
+innodb_spin_wait_delay	6
+innodb_stats_auto_recalc	ON
+innodb_stats_include_delete_marked	OFF
+innodb_stats_method	nulls_equal
+innodb_stats_on_metadata	OFF
+innodb_stats_persistent	ON
+innodb_stats_persistent_sample_pages	20
+innodb_stats_sample_pages	8
+innodb_stats_transient_sample_pages	8
+innodb_status_output	OFF
+innodb_status_output_locks	OFF
+innodb_strict_mode	ON
+innodb_support_xa	ON
+innodb_sync_array_size	1
+innodb_sync_spin_loops	30
+innodb_sys_tablespace_encrypt	OFF
+innodb_table_locks	ON
+innodb_temp_data_file_path	ibtmp1:12M:autoextend
+innodb_temp_tablespace_encrypt	OFF
+innodb_thread_concurrency	0
+innodb_thread_sleep_delay	10000
+innodb_tmpdir	
+innodb_track_changed_pages	OFF
+innodb_undo_directory	./
+innodb_undo_log_encrypt	OFF
+innodb_undo_log_truncate	OFF
+innodb_undo_logs	128
+innodb_undo_tablespaces	0
+innodb_use_global_flush_log_at_trx_commit	ON
+innodb_use_native_aio	ON
+innodb_version	5.7.25-28
+innodb_write_io_threads	4
+interactive_timeout	28800
+internal_tmp_disk_storage_engine	InnoDB
+join_buffer_size	262144
+keep_files_on_create	OFF
+key_buffer_size	8388608
+key_cache_age_threshold	300
+key_cache_block_size	1024
+key_cache_division_limit	100
+keyring_operations	ON
+kill_idle_transaction	0
+large_files_support	ON
+large_page_size	0
+large_pages	OFF
+lc_messages	en_US
+lc_messages_dir	/usr/share/mysql/
+lc_time_names	en_US
+license	GPL
+local_infile	ON
+lock_wait_timeout	31536000
+locked_in_memory	OFF
+log_bin	OFF
+log_bin_basename	
+log_bin_index	
+log_bin_trust_function_creators	OFF
+log_bin_use_v1_row_events	OFF
+log_builtin_as_identified_by_password	OFF
+log_error	/var/log/mysql/error.log
+log_error_verbosity	3
+log_output	FILE
+log_queries_not_using_indexes	OFF
+log_slave_updates	OFF
+log_slow_admin_statements	OFF
+log_slow_filter	
+log_slow_rate_limit	1
+log_slow_rate_type	session
+log_slow_slave_statements	OFF
+log_slow_sp_statements	ON
+log_slow_verbosity	
+log_statements_unsafe_for_binlog	ON
+log_syslog	OFF
+log_syslog_facility	daemon
+log_syslog_include_pid	ON
+log_syslog_tag	
+log_throttle_queries_not_using_indexes	0
+log_timestamps	UTC
+log_warnings	2
+long_query_time	10.000000
+low_priority_updates	OFF
+lower_case_file_system	OFF
+lower_case_table_names	0
+master_info_repository	FILE
+master_verify_checksum	OFF
+max_allowed_packet	4194304
+max_binlog_cache_size	18446744073709547520
+max_binlog_files	0
+max_binlog_size	1073741824
+max_binlog_stmt_cache_size	18446744073709547520
+max_connect_errors	100
+max_connections	151
+max_delayed_threads	20
+max_digest_length	1024
+max_error_count	64
+max_execution_time	0
+max_heap_table_size	16777216
+max_insert_delayed_threads	20
+max_join_size	18446744073709551615
+max_length_for_sort_data	1024
+max_points_in_geometry	65536
+max_prepared_stmt_count	16382
+max_relay_log_size	0
+max_seeks_for_key	18446744073709551615
+max_slowlog_files	0
+max_slowlog_size	0
+max_sort_length	1024
+max_sp_recursion_depth	0
+max_tmp_tables	32
+max_user_connections	0
+max_write_lock_count	18446744073709551615
+metadata_locks_cache_size	1024
+metadata_locks_hash_instances	8
+min_examined_row_limit	0
+multi_range_count	256
+myisam_data_pointer_size	6
+myisam_max_sort_file_size	9223372036853727232
+myisam_mmap_size	18446744073709551615
+myisam_recover_options	OFF
+myisam_repair_threads	1
+myisam_sort_buffer_size	8388608
+myisam_stats_method	nulls_unequal
+myisam_use_mmap	OFF
+mysql_native_password_proxy_users	OFF
+net_buffer_length	16384
+net_read_timeout	30
+net_retry_count	10
+net_write_timeout	60
+new	OFF
+ngram_token_size	2
+offline_mode	OFF
+old	OFF
+old_alter_table	OFF
+old_passwords	0
+open_files_limit	1024
+optimizer_prune_level	1
+optimizer_search_depth	62
+optimizer_switch	index_merge=on,index_merge_union=on,index_merge_sort_union=on,index_merge_intersection=on,engine_condition_pushdown=on,index_condition_pushdown=on,mrr=on,mrr_cost_based=on,block_nested_loop=on,batched_key_access=off,materialization=on,semijoin=on,loosescan=on,firstmatch=on,duplicateweedout=on,subquery_materialization_cost_based=on,use_index_extensions=on,condition_fanout_filter=on,derived_merge=on
+optimizer_trace	enabled=off,one_line=off
+optimizer_trace_features	greedy_search=on,range_optimizer=on,dynamic_range=on,repeated_subselect=on
+optimizer_trace_limit	1
+optimizer_trace_max_mem_size	16384
+optimizer_trace_offset	-1
+parser_max_mem_size	18446744073709551615
+performance_schema	ON
+performance_schema_accounts_size	-1
+performance_schema_digests_size	5000
+performance_schema_events_stages_history_long_size	1000
+performance_schema_events_stages_history_size	10
+performance_schema_events_statements_history_long_size	1000
+performance_schema_events_statements_history_size	10
+performance_schema_events_transactions_history_long_size	1000
+performance_schema_events_transactions_history_size	10
+performance_schema_events_waits_history_long_size	1000
+performance_schema_events_waits_history_size	10
+performance_schema_hosts_size	-1
+performance_schema_max_cond_classes	80
+performance_schema_max_cond_instances	-1
+performance_schema_max_digest_length	1024
+performance_schema_max_file_classes	80
+performance_schema_max_file_handles	32768
+performance_schema_max_file_instances	-1
+performance_schema_max_index_stat	-1
+performance_schema_max_memory_classes	400
+performance_schema_max_metadata_locks	-1
+performance_schema_max_mutex_classes	250
+performance_schema_max_mutex_instances	-1
+performance_schema_max_prepared_statements_instances	-1
+performance_schema_max_program_instances	-1
+performance_schema_max_rwlock_classes	50
+performance_schema_max_rwlock_instances	-1
+performance_schema_max_socket_classes	10
+performance_schema_max_socket_instances	-1
+performance_schema_max_sql_text_length	1024
+performance_schema_max_stage_classes	150
+performance_schema_max_statement_classes	203
+performance_schema_max_statement_stack	10
+performance_schema_max_table_handles	-1
+performance_schema_max_table_instances	-1
+performance_schema_max_table_lock_stat	-1
+performance_schema_max_thread_classes	50
+performance_schema_max_thread_instances	-1
+performance_schema_session_connect_attrs_size	512
+performance_schema_setup_actors_size	-1
+performance_schema_setup_objects_size	-1
+performance_schema_users_size	-1
+pid_file	/var/run/mysqld/mysqld.pid
+plugin_dir	/usr/lib/mysql/plugin/
+port	3306
+preload_buffer_size	32768
+profiling	OFF
+profiling_history_size	15
+protocol_version	10
+proxy_protocol_networks	
+query_alloc_block_size	8192
+query_cache_limit	1048576
+query_cache_min_res_unit	4096
+query_cache_size	1048576
+query_cache_strip_comments	OFF
+query_cache_type	OFF
+query_cache_wlock_invalidate	OFF
+query_prealloc_size	8192
+range_alloc_block_size	4096
+range_optimizer_max_mem_size	8388608
+rbr_exec_mode	STRICT
+read_buffer_size	131072
+read_only	OFF
+read_rnd_buffer_size	262144
+relay_log	
+relay_log_basename	/var/lib/mysql/toomuchdata-relay-bin
+relay_log_index	/var/lib/mysql/toomuchdata-relay-bin.index
+relay_log_info_file	relay-log.info
+relay_log_info_repository	FILE
+relay_log_purge	ON
+relay_log_recovery	OFF
+relay_log_space_limit	0
+report_host	
+report_password	
+report_port	3306
+report_user	
+require_secure_transport	OFF
+rpl_stop_slave_timeout	31536000
+secure_auth	ON
+secure_file_priv	/var/lib/mysql-files/
+server_id	0
+server_id_bits	32
+server_uuid	bae87fd9-9983-11e8-82e9-5254009efe16
+session_track_gtids	OFF
+session_track_schema	ON
+session_track_state_change	OFF
+session_track_system_variables	time_zone,autocommit,character_set_client,character_set_results,character_set_connection
+session_track_transaction_info	OFF
+sha256_password_auto_generate_rsa_keys	ON
+sha256_password_private_key_path	private_key.pem
+sha256_password_proxy_users	OFF
+sha256_password_public_key_path	public_key.pem
+show_compatibility_56	OFF
+show_create_table_verbosity	OFF
+show_old_temporals	OFF
+skip_external_locking	ON
+skip_name_resolve	OFF
+skip_networking	OFF
+skip_show_database	OFF
+slave_allow_batching	OFF
+slave_checkpoint_group	512
+slave_checkpoint_period	300
+slave_compressed_protocol	OFF
+slave_exec_mode	STRICT
+slave_load_tmpdir	/tmp
+slave_max_allowed_packet	1073741824
+slave_net_timeout	60
+slave_parallel_type	DATABASE
+slave_parallel_workers	0
+slave_pending_jobs_size_max	16777216
+slave_preserve_commit_order	OFF
+slave_rows_search_algorithms	TABLE_SCAN,INDEX_SCAN
+slave_skip_errors	OFF
+slave_sql_verify_checksum	ON
+slave_transaction_retries	10
+slave_type_conversions	
+slow_launch_time	2
+slow_query_log	OFF
+slow_query_log_always_write_time	10.000000
+slow_query_log_file	/var/lib/mysql/toomuchdata-slow.log
+slow_query_log_use_global_control	
+socket	/var/run/mysqld/mysqld.sock
+sort_buffer_size	262144
+sql_auto_is_null	OFF
+sql_big_selects	ON
+sql_buffer_result	OFF
+sql_log_off	OFF
+sql_mode	STRICT_ALL_TABLES,NO_ENGINE_SUBSTITUTION
+sql_notes	ON
+sql_quote_show_create	ON
+sql_safe_updates	OFF
+sql_select_limit	18446744073709551615
+sql_slave_skip_counter	0
+sql_warnings	OFF
+ssl_ca	ca.pem
+ssl_capath	
+ssl_cert	server-cert.pem
+ssl_cipher	
+ssl_crl	
+ssl_crlpath	
+ssl_key	server-key.pem
+stored_program_cache	256
+super_read_only	OFF
+sync_binlog	1
+sync_frm	ON
+sync_master_info	10000
+sync_relay_log	10000
+sync_relay_log_info	10000
+system_time_zone	UTC
+table_definition_cache	615
+table_open_cache	431
+table_open_cache_instances	16
+thread_cache_size	9
+thread_handling	one-thread-per-connection
+thread_pool_high_prio_mode	transactions
+thread_pool_high_prio_tickets	4294967295
+thread_pool_idle_timeout	60
+thread_pool_max_threads	100000
+thread_pool_oversubscribe	3
+thread_pool_size	2
+thread_pool_stall_limit	500
+thread_stack	262144
+thread_statistics	OFF
+time_format	%H:%i:%s
+time_zone	SYSTEM
+tls_version	TLSv1,TLSv1.1,TLSv1.2
+tmp_table_size	16777216
+tmpdir	/tmp
+transaction_alloc_block_size	8192
+transaction_isolation	REPEATABLE-READ
+transaction_prealloc_size	4096
+transaction_read_only	OFF
+transaction_write_set_extraction	OFF
+tx_isolation	REPEATABLE-READ
+tx_read_only	OFF
+unique_checks	ON
+updatable_views_with_limit	YES
+userstat	OFF
+version	5.7.25-28
+version_comment	Percona Server (GPL), Release '28', Revision 'c335905'
+version_compile_machine	x86_64
+version_compile_os	debian-linux-gnu
+version_suffix	
+wait_timeout	28800
+---------- status ---------
+Aborted_clients	0
+Aborted_connects	0
+Binlog_snapshot_file	
+Binlog_snapshot_position	0
+Binlog_cache_disk_use	0
+Binlog_cache_use	0
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Bytes_received	1538398760
+Bytes_sent	212200758
+Com_admin_commands	1025
+Com_assign_to_keycache	0
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_instance	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	0
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	2
+Com_change_master	0
+Com_change_repl_filter	0
+Com_check	0
+Com_checksum	0
+Com_commit	0
+Com_create_compression_dictionary	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	3
+Com_create_index	0
+Com_create_procedure	0
+Com_create_server	0
+Com_create_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	0
+Com_dealloc_sql	0
+Com_delete	0
+Com_delete_multi	0
+Com_do	0
+Com_drop_compression_dictionary	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	2
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_server	0
+Com_drop_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	0
+Com_empty_query	0
+Com_execute_sql	0
+Com_explain_other	0
+Com_flush	0
+Com_get_diagnostics	0
+Com_grant	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	26534105
+Com_insert_select	0
+Com_install_plugin	0
+Com_kill	1
+Com_load	0
+Com_lock_tables	0
+Com_lock_tables_for_backup	0
+Com_lock_binlog_for_backup	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_rollback	0
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	10007108
+Com_set_option	1020
+Com_signal	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	0
+Com_show_client_statistics	0
+Com_show_collations	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	8
+Com_show_create_trigger	0
+Com_show_databases	3
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	24
+Com_show_events	0
+Com_show_errors	0
+Com_show_fields	4
+Com_show_function_code	0
+Com_show_function_status	0
+Com_show_grants	0
+Com_show_index_statistics	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_code	0
+Com_show_procedure_status	0
+Com_show_processlist	0
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	667
+Com_show_status	181
+Com_show_storage_engines	0
+Com_show_table_statistics	0
+Com_show_table_status	24
+Com_show_tables	7
+Com_show_thread_statistics	0
+Com_show_triggers	0
+Com_show_user_statistics	0
+Com_show_variables	574
+Com_show_warnings	0
+Com_show_create_user	0
+Com_shutdown	0
+Com_slave_start	0
+Com_slave_stop	0
+Com_group_replication_start	0
+Com_group_replication_stop	0
+Com_stmt_execute	0
+Com_stmt_close	0
+Com_stmt_fetch	0
+Com_stmt_prepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_truncate	4
+Com_uninstall_plugin	0
+Com_unlock_binlog	0
+Com_unlock_tables	0
+Com_update	0
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Com_stmt_reprepare	0
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	0
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	525
+Created_tmp_disk_tables	9026
+Created_tmp_files	6
+Created_tmp_tables	128233
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Flush_commands	1
+Handler_commit	16534111
+Handler_delete	2
+Handler_discover	0
+Handler_external_lock	53081105
+Handler_mrr_init	0
+Handler_prepare	0
+Handler_read_first	865
+Handler_read_key	10069798
+Handler_read_last	0
+Handler_read_next	11631
+Handler_read_prev	0
+Handler_read_rnd	52
+Handler_read_rnd_next	1988363
+Handler_rollback	2
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_update	64346
+Handler_write	27072469
+Innodb_background_log_sync	9562
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 190322 19:08:06
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	233
+Innodb_buffer_pool_bytes_data	3817472
+Innodb_buffer_pool_pages_dirty	0
+Innodb_buffer_pool_bytes_dirty	0
+Innodb_buffer_pool_pages_flushed	2399528
+Innodb_buffer_pool_pages_free	65290
+Innodb_buffer_pool_pages_LRU_flushed	0
+Innodb_buffer_pool_pages_made_not_young	1058045
+Innodb_buffer_pool_pages_made_young	2621211
+Innodb_buffer_pool_pages_misc	5
+Innodb_buffer_pool_pages_old	0
+Innodb_buffer_pool_pages_total	65528
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	0
+Innodb_buffer_pool_read_ahead_evicted	0
+Innodb_buffer_pool_read_requests	328159080
+Innodb_buffer_pool_reads	1005431
+Innodb_buffer_pool_wait_free	127650
+Innodb_buffer_pool_write_requests	135014228
+Innodb_checkpoint_age	9
+Innodb_checkpoint_max_age	434154333
+Innodb_data_fsyncs	80572
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	17321792512
+Innodb_data_reads	1057269
+Innodb_data_writes	2197149
+Innodb_data_written	43261945856
+Innodb_dblwr_pages_written	2138054
+Innodb_dblwr_writes	23470
+Innodb_ibuf_free_list	1404
+Innodb_ibuf_segment_size	1406
+Innodb_log_waits	0
+Innodb_log_write_requests	17762447
+Innodb_log_writes	23359
+Innodb_lsn_current	24129383847
+Innodb_lsn_flushed	24129383847
+Innodb_lsn_last_checkpoint	24129383838
+Innodb_master_thread_active_loops	7247
+Innodb_master_thread_idle_loops	2315
+Innodb_max_trx_id	21450357
+Innodb_mem_adaptive_hash	17822528
+Innodb_mem_dictionary	4655367
+Innodb_oldest_view_low_limit_trx_id	0
+Innodb_os_log_fsyncs	24934
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	8147099136
+Innodb_page_size	16384
+Innodb_pages_created	312708
+Innodb_pages_read	1057233
+Innodb_pages0_read	24
+Innodb_pages_written	2143284
+Innodb_purge_trx_id	21450349
+Innodb_purge_undo_no	0
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	0
+Innodb_rows_inserted	27214506
+Innodb_rows_read	692042
+Innodb_rows_updated	0
+Innodb_num_open_files	27
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_secondary_index_triggered_cluster_reads	11629
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_buffered_aio_submitted	0
+Innodb_scan_pages_contiguous	0
+Innodb_scan_pages_disjointed	0
+Innodb_scan_pages_total_seek_distance	0
+Innodb_scan_data_size	0
+Innodb_scan_deleted_recs_size	0
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_encryption_n_merge_blocks_encrypted	0
+Innodb_encryption_n_merge_blocks_decrypted	0
+Innodb_encryption_n_rowlog_blocks_encrypted	0
+Innodb_encryption_n_rowlog_blocks_decrypted	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	6698
+Key_blocks_used	3
+Key_read_requests	5722
+Key_reads	1019
+Key_write_requests	10
+Key_writes	10
+Locked_connects	0
+Max_execution_time_exceeded	0
+Max_execution_time_set	0
+Max_execution_time_set_failed	0
+Max_used_connections	7
+Max_used_connections_time	2019-03-22 19:22:53
+Not_flushed_delayed_rows	0
+Ongoing_anonymous_transaction_count	0
+Open_files	0
+Open_streams	0
+Open_table_definitions	223
+Open_tables	416
+Opened_files	6950
+Opened_table_definitions	227
+Opened_tables	72535
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_index_stat_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_memory_classes_lost	0
+Performance_schema_metadata_lock_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_nested_statement_lost	0
+Performance_schema_prepared_statements_lost	0
+Performance_schema_program_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_table_lock_stat_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	1
+Qcache_free_memory	1031832
+Qcache_hits	0
+Qcache_inserts	0
+Qcache_lowmem_prunes	0
+Qcache_not_cached	7103
+Qcache_queries_in_cache	0
+Qcache_total_blocks	1
+Queries	86548634
+Questions	16547602
+Rsa_public_key	-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvU67SgBvyqRqaXYnEUFR\nGlyS+65Bq5Si4tRQIKbIX+nFTFaZkvz6Ds5vJ4INNY9ImSZElbEBgo/f5Bn2fkdG\nqPjyyixrU7G+E5qGmQ2XnWTlLDKGD5TTbecLt7KCWoFHkfYgw/ctCbheeVkkEDmR\n3bIFxxDkBRq6n07++Niu+QP/5A1ADbFimKDkYLhQrDsvaDYEZuychk7jUF3nzb/B\nCdrahkjfLqJbXs0Sq9FDp4Yyl43g/iaNKkF9ALzAP4w0LhOMeGcRlfHGrkC5EQve\niNdStT0c+BEve83FOIf8OyMxjhDy6ivPi2Bc1m3DZZ4e2oJNgbTzJP/JIIdbi8lR\nkwIDAQAB\n-----END PUBLIC KEY-----\n
+Select_full_join	190
+Select_full_range_join	0
+Select_range	0
+Select_range_check	0
+Select_scan	7567
+Slave_open_temp_tables	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_range	0
+Sort_rows	52
+Sort_scan	7
+Ssl_accept_renegotiates	0
+Ssl_accepts	12
+Ssl_callback_cache_hits	0
+Ssl_cipher	DHE-RSA-AES256-SHA
+Ssl_cipher_list	ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:DHE-RSA-AES128-SHA256:DHE-DSS-AES128-SHA256:DHE-DSS-AES256-GCM-SHA384:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-DSS-AES128-SHA:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DHE-RSA-AES256-GCM-SHA384
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	18446744073709551615
+Ssl_ctx_verify_mode	5
+Ssl_default_timeout	7200
+Ssl_finished_accepts	12
+Ssl_finished_connects	0
+Ssl_server_not_after	Aug  3 14:19:29 2028 GMT
+Ssl_server_not_before	Aug  6 14:19:29 2018 GMT
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	SERVER
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	128
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	12
+Ssl_verify_depth	18446744073709551615
+Ssl_verify_mode	5
+Ssl_version	TLSv1.1
+Table_locks_immediate	6432
+Table_locks_waited	0
+Table_open_cache_hits	26600623
+Table_open_cache_misses	72535
+Table_open_cache_overflows	72108
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	2
+Threads_connected	5
+Threads_created	7
+Threads_running	1
+Uptime	11340
+Uptime_since_flush_status	11340
+1553293025	starting
+1553293053	100000	1057285	2197543
+1553293078	200000	1057419	2198131
+1553293102	300000	1057423	2199147
+1553293126	400000	1057425	2200599
+1553293150	500000	1057427	2202241
+1553293175	600000	1057431	2204122
+1553293199	700000	1057433	2206126
+1553293224	800000	1057435	2208089
+1553293249	900000	1057436	2210238
+1553293273	1000000	1057436	2212210
+1553293298	1100000	1057436	2214361
+1553293323	1200000	1057436	2216471
+1553293348	1300000	1057438	2218745
+1553293374	1400000	1057440	2221080
+1553293400	1500000	1057440	2223427
+1553293425	1600000	1057441	2225798
+1553293450	1700000	1057444	2228262
+1553293476	1800000	1057444	2230720
+1553293501	1900000	1057444	2233251
+1553293527	2000000	1057444	2235766
+1553293553	2100000	1057446	2238182
+1553293578	2200000	1057446	2240734
+1553293605	2300000	1057447	2243327
+1553293630	2400000	1057447	2245848
+1553293656	2500000	1057447	2248679
+1553293683	2600000	1057447	2251489
+1553293709	2700000	1057447	2254409
+1553293735	2800000	1057447	2257368
+1553293761	2900000	1057447	2260465
+1553293788	3000000	1057447	2263646
+1553293815	3100000	1057447	2266793
+1553293843	3200000	1057447	2269988
+1553293869	3300000	1057447	2273205
+1553293896	3400000	1057447	2276255
+1553293923	3500000	1057447	2279576
+1553293951	3600000	1057447	2282882
+1553293978	3700000	1057447	2286033
+1553294005	3800000	1057447	2289193
+1553294032	3900000	1057449	2292381
+1553294059	4000000	1057449	2295629
+1553294087	4100000	1057449	2298802
+1553294114	4200000	1057449	2302099
+1553294142	4300000	1057450	2305332
+1553294169	4400000	1057455	2308706
+1553294197	4500000	1057457	2312132
+1553294225	4600000	1057462	2315482
+1553294252	4700000	1057472	2318989
+1553294281	4800000	1057501	2322624
+1553294309	4900000	1057519	2326336
+1553294337	5000000	1057535	2330148
+1553294365	5100000	1057558	2334258
+1553294393	5200000	1057591	2338149
+1553294421	5300000	1057618	2342259
+1553294449	5400000	1057638	2346528
+1553294477	5500000	1057666	2350716
+1553294506	5600000	1057706	2355032
+1553294534	5700000	1057744	2359396
+1553294562	5800000	1057802	2363730
+1553294589	5900000	1057855	2368119
+1553294618	6000000	1057900	2372616
+1553294645	6100000	1057933	2377031
+1553294673	6200000	1057984	2381385
+1553294701	6300000	1058028	2385895
+1553294729	6400000	1058101	2390392
+1553294757	6500000	1058168	2394818
+1553294785	6600000	1058230	2399264
+1553294814	6700000	1058298	2403939
+1553294843	6800000	1058346	2408292
+1553294871	6900000	1058403	2412690
+1553294898	7000000	1058467	2417151
+1553294926	7100000	1058561	2421569
+1553294954	7200000	1058614	2425914
+1553294981	7300000	1058680	2430367
+1553295009	7400000	1058746	2434730
+1553295037	7500000	1058821	2439214
+1553295066	7600000	1058881	2443833
+1553295095	7700000	1058951	2448327
+1553295123	7800000	1059047	2452758
+1553295150	7900000	1059106	2457240
+1553295179	8000000	1059178	2461712
+1553295207	8100000	1059261	2466189
+1553295236	8200000	1059348	2470831
+1553295264	8300000	1059429	2475495
+1553295294	8400000	1059529	2480086
+1553295322	8500000	1059634	2484706
+1553295351	8600000	1059730	2489243
+1553295380	8700000	1059871	2493959
+1553295408	8800000	1059976	2498564
+1553295436	8900000	1060066	2503262
+1553295464	9000000	1060166	2508111
+1553295493	9100000	1060277	2512951
+1553295522	9200000	1060385	2517964
+1553295551	9300000	1060508	2523021
+1553295580	9400000	1060617	2528169
+1553295609	9500000	1060735	2533338
+1553295639	9600000	1060891	2538832
+1553295668	9700000	1061022	2544170
+1553295696	9800000	1061159	2549386
+1553295725	9900000	1061297	2554969
+1553295753	10000000	1061431	2560559
+1553295782	10100000	1061573	2566147
+1553295812	10200000	1061701	2572120
+1553295840	10300000	1061832	2577912
+1553295870	10400000	1061973	2583876
+1553295900	10500000	1062103	2589846
+1553295929	10600000	1062253	2595840
+1553295959	10700000	1062477	2601868
+1553295988	10800000	1062632	2607970
+1553296019	10900000	1062780	2614301
+1553296048	11000000	1062961	2620420
+1553296076	11100000	1063126	2626361
+1553296105	11200000	1063277	2632689
+1553296136	11300000	1063435	2639125
+1553296165	11400000	1063618	2645196
+1553296195	11500000	1063805	2651668
+1553296224	11600000	1063990	2657957
+1553296253	11700000	1064152	2664074
+1553296283	11800000	1064385	2670829
+1553296313	11900000	1064570	2677110
+1553296342	12000000	1064753	2683400
+1553296372	12100000	1064931	2689921
+1553296401	12200000	1065119	2696200
+1553296431	12300000	1065299	2702810
+1553296462	12400000	1065483	2709367
+1553296491	12500000	1065678	2715651
+1553296521	12600000	1065856	2722098
+1553296551	12700000	1066064	2728546
+1553296581	12800000	1066258	2735057
+1553296611	12900000	1066467	2741552
+1553296640	13000000	1066667	2747897
+1553296670	13100000	1066931	2754327
+1553296700	13200000	1067130	2760830
+1553296730	13300000	1067329	2767291
+1553296760	13400000	1067523	2773746
+1553296790	13500000	1067739	2780244
+1553296819	13600000	1067952	2786523
+1553296850	13700000	1068143	2793260
+1553296879	13800000	1068360	2799575
+1553296909	13900000	1068610	2806022
+1553296937	14000000	1068848	2812085
+1553296968	14100000	1069098	2818806
+1553296998	14200000	1069329	2825441
+1553297026	14300000	1069585	2831518
+1553297056	14400000	1069837	2838127
+1553297085	14500000	1070153	2844505
+1553297116	14600000	1070399	2851284
+1553297146	14700000	1070645	2857808
+1553297176	14800000	1070866	2864252
+1553297207	14900000	1071135	2870944
+1553297237	15000000	1071390	2877380
+1553297267	15100000	1071631	2883616
+1553297297	15200000	1071868	2890076
+1553297326	15300000	1072114	2896638
+1553297357	15400000	1072358	2903343
+1553297388	15500000	1072605	2909909
+1553297419	15600000	1072902	2916691
+1553297449	15700000	1073141	2922934
+1553297478	15800000	1073396	2929379
+1553297508	15900000	1073654	2935951
+1553297538	16000000	1073938	2942520
+1553297567	16100000	1074305	2949038
+1553297597	16200000	1074581	2955536
+1553297629	16300000	1074853	2962505
+1553297659	16400000	1075137	2969076
+1553297689	16500000	1075427	2975728
+1553297721	16600000	1075670	2982601
+1553297751	16700000	1075968	2989176
+1553297781	16800000	1076256	2995688
+1553297812	16900000	1076548	3002592
+1553297843	17000000	1076845	3009540
+1553297874	17100000	1077135	3016345
+1553297905	17200000	1077416	3023136
+1553297936	17300000	1077709	3030284
+1553297966	17400000	1077984	3037016
+1553297998	17500000	1078286	3044267
+1553298029	17600000	1078588	3051545
+1553298061	17700000	1078901	3058641
+1553298091	17800000	1079208	3065669
+1553298124	17900000	1079631	3073069
+1553298154	18000000	1079969	3080128
+1553298186	18100000	1080274	3087607
+1553298217	18200000	1080598	3094964
+1553298250	18300000	1080983	3102608
+1553298281	18400000	1081340	3110063
+1553298313	18500000	1081701	3117638
+1553298345	18600000	1082051	3125325
+1553298378	18700000	1082414	3133150
+1553298410	18800000	1082777	3140947
+1553298444	18900000	1083099	3149204
+1553298476	19000000	1083470	3156763
+1553298508	19100000	1083813	3164671
+1553298539	19200000	1084170	3172430
+1553298571	19300000	1084549	3180613
+1553298603	19400000	1084900	3188629
+1553298634	19500000	1085252	3196584
+1553298666	19600000	1085598	3204839
+1553298697	19700000	1085955	3213019
+1553298729	19800000	1086332	3221587
+1553298761	19900000	1086777	3230071
+1553298794	20000000	1087163	3238756
+1553298828	20100000	1087560	3247532
+1553298860	20200000	1087963	3256027
+1553298892	20300000	1088364	3264409
+1553298924	20400000	1088751	3272987
+1553298956	20500000	1089129	3281779
+1553298986	20600000	1089523	3289992
+1553299019	20700000	1089942	3299211
+1553299051	20800000	1090349	3308171
+1553299083	20900000	1090741	3317003
+1553299115	21000000	1091132	3325800
+1553299147	21100000	1091540	3334887
+1553299180	21200000	1091937	3344158
+1553299211	21300000	1092336	3353028
+1553299244	21400000	1092720	3362249
+1553299275	21500000	1093127	3370982
+1553299307	21600000	1093565	3380267
+1553299339	21700000	1094013	3389228
+1553299372	21800000	1094464	3398724
+1553299404	21900000	1094850	3408039
+1553299436	22000000	1095617	3417245
+1553299469	22100000	1096087	3426497
+1553299501	22200000	1096505	3435807
+1553299535	22300000	1096901	3445478
+1553299566	22400000	1097345	3454347
+1553299598	22500000	1097765	3463614
+1553299630	22600000	1098196	3473029
+1553299663	22700000	1098649	3482496
+1553299694	22800000	1099099	3491461
+1553299725	22900000	1099547	3500807
+1553299758	23000000	1100018	3510213
+1553299791	23100000	1100466	3519968
+1553299823	23200000	1100911	3529454
+1553299854	23300000	1101393	3538497
+1553299887	23400000	1101863	3548072
+1553299920	23500000	1102354	3557736
+1553299952	23600000	1102801	3567213
+1553299985	23700000	1103262	3576275
+1553300017	23800000	1103735	3585724
+1553300051	23900000	1104217	3595444
+1553300082	24000000	1104675	3604861
+1553300114	24100000	1105154	3614125
+1553300147	24200000	1105597	3623750
+1553300178	24300000	1106034	3633000
+1553300211	24400000	1106650	3642643
+1553300243	24500000	1107157	3652060
+1553300275	24600000	1107669	3661593
+1553300308	24700000	1108170	3671133
+1553300341	24800000	1108670	3680760
+1553300373	24900000	1109187	3690140
+1553300406	25000000	1109702	3699811
+1553300438	25100000	1110220	3709106
+1553300471	25200000	1110737	3718957
+1553300503	25300000	1111228	3728521
+1553300535	25400000	1111761	3737733
+1553300568	25500000	1112294	3747340
+1553300602	25600000	1112812	3757166
+1553300633	25700000	1113374	3766314
+1553300666	25800000	1113904	3775700
+1553300698	25900000	1114400	3784876
+1553300730	26000000	1114952	3794569
+1553300764	26100000	1115496	3804384
+1553300795	26200000	1116025	3813637
+1553300828	26300000	1116549	3823226
+1553300859	26400000	1117078	3832427
+1553300892	26500000	1117571	3842236
+1553300924	26600000	1118075	3851741
+1553300957	26700000	1118597	3861454
+1553300989	26800000	1119117	3870933
+1553301021	26900000	1119651	3880167
+1553301054	27000000	1120199	3889774
+1553301086	27100000	1120866	3899382
+1553301119	27200000	1121423	3908996
+1553301151	27300000	1121970	3918531
+1553301183	27400000	1122538	3927999
+1553301215	27500000	1123091	3937524
+1553301249	27600000	1123659	3947187
+1553301280	27700000	1124258	3956291
+1553301311	27800000	1124810	3965465
+1553301343	27900000	1125331	3974897
+1553301376	28000000	1125866	3984604
+1553301408	28100000	1126391	3994174
+1553301440	28200000	1126994	4003478
+1553301474	28300000	1127554	4013124
+1553301506	28400000	1128157	4022606
+1553301536	28500000	1128734	4031779
+1553301568	28600000	1129313	4041215
+1553301601	28700000	1129922	4051017
+1553301632	28800000	1130505	4060312
+1553301665	28900000	1131048	4069831
+1553301696	29000000	1131632	4079005
+1553301729	29100000	1132246	4088785
+1553301763	29200000	1132824	4098306
+1553301794	29300000	1133412	4107726
+1553301827	29400000	1134053	4117140
+1553301859	29500000	1134701	4126610
+1553301892	29600000	1135343	4136149
+1553301923	29700000	1135928	4145403
+1553301956	29800000	1136527	4155093
+1553301988	29900000	1137146	4164618
+1553302021	30000000	1137734	4174221
+1553302052	30100000	1138358	4183234
+1553302085	30200000	1138997	4192957
+1553302118	30300000	1139588	4202725
+1553302149	30400000	1140215	4211740
+1553302182	30500000	1140826	4221352
+1553302214	30600000	1141435	4230699
+1553302246	30700000	1142039	4240198
+1553302277	30800000	1142665	4249403
+1553302310	30900000	1143274	4259262
+1553302343	31000000	1143928	4269186
+1553302376	31100000	1144568	4278741
+1553302408	31200000	1145210	4288143
+1553302440	31300000	1145877	4297571
+1553302474	31400000	1146497	4307431
+1553302506	31500000	1147087	4317114
+1553302539	31600000	1147765	4326892
+1553302570	31700000	1148424	4335716
+1553302603	31800000	1149098	4345696
+1553302638	31900000	1149767	4355758
+1553302670	32000000	1150386	4365321
+1553302703	32100000	1151013	4374669
+1553302737	32200000	1151673	4384553
+1553302770	32300000	1152346	4394265
+1553302802	32400000	1153002	4403774
+1553302834	32500000	1153672	4412997
+1553302868	32600000	1154338	4423423
+1553302901	32700000	1155031	4432959
+1553302934	32800000	1155856	4442947
+1553302966	32900000	1156527	4452321
+1553303000	33000000	1157230	4462487
+1553303031	33100000	1157933	4471979
+1553303064	33200000	1158557	4481834
+1553303098	33300000	1159242	4491647
+1553303130	33400000	1159962	4501624
+1553303163	33500000	1160675	4511317
+1553303194	33600000	1161376	4521056
+1553303228	33700000	1162027	4531362
+1553303261	33800000	1162761	4541432
+1553303293	33900000	1163492	4551101
+1553303325	34000000	1164233	4561197
+1553303357	34100000	1164926	4570916
+1553303391	34200000	1165629	4581233
+1553303424	34300000	1166270	4591275
+1553303456	34400000	1166966	4601394
+1553303488	34500000	1167678	4611181
+1553303523	34600000	1168437	4622038
+1553303554	34700000	1169158	4631955
+1553303586	34800000	1169959	4641879
+1553303619	34900000	1170704	4652295
+1553303652	35000000	1171412	4662531
+1553303686	35100000	1172128	4672935
+1553303718	35200000	1172862	4682860
+1553303751	35300000	1173551	4693192
+1553303784	35400000	1174265	4703454
+1553303817	35500000	1175012	4713644
+1553303849	35600000	1175753	4723877
+1553303883	35700000	1176539	4734315
+1553303915	35800000	1177306	4744467
+1553303948	35900000	1178077	4754519
+1553303982	36000000	1178806	4765660
+1553304015	36100000	1179549	4776122
+1553304048	36200000	1180319	4786664
+1553304082	36300000	1181106	4797289
+1553304115	36400000	1182000	4807946
+1553304148	36500000	1182775	4818843
+1553304181	36600000	1183567	4829658
+1553304215	36700000	1184330	4840549
+1553304250	36800000	1185097	4851625
+1553304282	36900000	1185921	4862253
+1553304317	37000000	1186733	4873320
+1553304350	37100000	1187563	4884456
+1553304383	37200000	1188361	4895370
+1553304417	37300000	1189157	4906251
+1553304452	37400000	1189978	4917392
+1553304486	37500000	1190817	4928231
+1553304521	37600000	1191582	4939586
+1553304554	37700000	1192361	4950484
+1553304587	37800000	1193188	4960782
+1553304620	37900000	1194045	4971253
+1553304652	38000000	1194900	4981198
+1553304686	38100000	1195760	4992390
+1553304719	38200000	1196654	5003009
+1553304753	38300000	1197509	5013686
+1553304784	38400000	1198371	5023710
+1553304817	38500000	1199204	5034434
+1553304850	38600000	1200083	5045211
+1553304884	38700000	1200946	5055846
+1553304917	38800000	1201777	5066879
+1553304949	38900000	1202642	5076985
+1553304981	39000000	1203540	5087639
+1553305014	39100000	1204411	5097913
+1553305047	39200000	1205268	5108455
+1553305079	39300000	1206095	5119446
+1553305110	39400000	1206995	5129994
+1553305144	39500000	1207864	5141179
+1553305178	39600000	1208741	5152558
+1553305211	39700000	1209636	5163513
+1553305243	39800000	1210556	5173952
+1553305276	39900000	1211469	5184787
+1553305310	40000000	1212409	5195853
+1553305343	40100000	1213336	5206524
+1553305377	40200000	1214187	5217681
+1553305411	40300000	1215065	5228603
+1553305444	40400000	1216221	5239757
+1553305478	40500000	1217194	5250899
+1553305513	40600000	1218196	5262830
+1553305548	40700000	1219198	5274637
+1553305584	40800000	1220218	5287078
+1553305618	40900000	1221255	5299144
+1553305652	41000000	1222315	5311035
+1553305686	41100000	1223440	5322289
+1553305720	41200000	1224545	5333310
+1553305756	41300000	1225741	5345144
+1553305794	41400000	1226892	5357670
+1553305826	41500000	1228142	5369621
+1553305860	41600000	1229387	5381473
+1553305896	41700000	1230682	5393857
+1553305931	41800000	1232037	5405405
+1553305968	41900000	1233519	5417624
+1553306003	42000000	1235098	5429064
+1553306038	42100000	1236816	5441209
+1553306073	42200000	1238613	5453116
+1553306110	42300000	1240549	5465802
+1553306147	42400000	1242601	5478065
+1553306182	42500000	1244690	5489817
+1553306222	42600000	1246948	5502422
+1553306260	42700000	1249294	5514746
+1553306297	42800000	1251777	5526911
+1553306336	42900000	1254440	5539554
+1553306376	43000000	1257208	5552285
+1553306414	43100000	1260122	5565347
+1553306453	43200000	1263198	5577490
+1553306493	43300000	1266337	5590346
+1553306532	43400000	1269662	5603160
+1553306572	43500000	1273157	5615888
+1553306611	43600000	1276853	5628406
+1553306653	43700000	1280666	5641290
+1553306695	43800000	1284676	5654901
+1553306735	43900000	1288773	5668288
+1553306776	44000000	1293059	5681520
+1553306818	44100000	1297441	5694604
+1553306864	44200000	1302143	5709530
+1553306910	44300000	1306942	5724545
+1553306953	44400000	1311853	5737859
+1553306999	44500000	1316843	5751801
+1553307047	44600000	1322049	5766465
+1553307094	44700000	1327319	5780927
+1553307141	44800000	1332739	5795011
+1553307190	44900000	1338593	5809761
+1553307238	45000000	1344328	5824433
+1553307285	45100000	1350300	5838560
+1553307333	45200000	1356386	5852885
+1553307383	45300000	1362560	5867777
+1553307432	45400000	1368702	5882827
+1553307480	45500000	1375051	5897292
+1553307530	45600000	1381622	5912610
+1553307582	45700000	1388197	5928246
+1553307632	45800000	1394891	5943550
+1553307683	45900000	1401767	5958871
+1553307732	46000000	1408649	5973635
+1553307782	46100000	1415675	5989104
+1553307835	46200000	1422757	6005253
+1553307885	46300000	1429990	6020413
+1553307936	46400000	1437298	6035896
+1553307987	46500000	1444616	6051559
+1553308039	46600000	1451978	6066617
+1553308090	46700000	1459570	6081841
+1553308142	46800000	1467294	6097343
+1553308195	46900000	1474989	6113179
+1553308249	47000000	1482754	6129628
+1553308300	47100000	1490524	6144923
+1553308354	47200000	1498485	6160698
+1553308406	47300000	1506511	6176031
+1553308461	47400000	1514563	6192459
+1553308515	47500000	1522741	6208574
+1553308570	47600000	1530855	6225082
+1553308623	47700000	1538996	6240953
+1553308678	47800000	1547254	6257250
+1553308731	47900000	1555520	6272935
+1553308786	48000000	1563986	6289134
+1553308840	48100000	1572296	6304688
+1553308896	48200000	1580832	6321277
+1553308951	48300000	1589442	6337457
+1553309004	48400000	1597827	6353024
+1553309060	48500000	1606401	6369389
+1553309118	48600000	1615079	6386128
+1553309173	48700000	1623826	6402642
+1553309229	48800000	1632572	6418642
+1553309285	48900000	1641186	6435120
+1553309339	49000000	1649822	6450667
+1553309396	49100000	1658653	6467373
+1553309454	49200000	1667520	6484439
+1553309506	49300000	1676397	6499679
+1553309562	49400000	1685252	6515809
+1553309619	49500000	1694300	6532695
+1553309674	49600000	1703297	6548376
+1553309732	49700000	1712388	6565324
+1553309789	49800000	1721694	6581738
+1553309845	49900000	1730878	6597874
+1553309902	50000000	1739819	6613933
+---------- status ---------
+Aborted_clients	0
+Aborted_connects	0
+Binlog_snapshot_file	
+Binlog_snapshot_position	0
+Binlog_cache_disk_use	0
+Binlog_cache_use	0
+Binlog_stmt_cache_disk_use	0
+Binlog_stmt_cache_use	0
+Bytes_received	6641728509
+Bytes_sent	806930431
+Com_admin_commands	2551
+Com_assign_to_keycache	0
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_instance	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	0
+Com_alter_tablespace	0
+Com_alter_user	0
+Com_analyze	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	2
+Com_change_master	0
+Com_change_repl_filter	0
+Com_check	0
+Com_checksum	0
+Com_commit	0
+Com_create_compression_dictionary	0
+Com_create_db	0
+Com_create_event	0
+Com_create_function	3
+Com_create_index	0
+Com_create_procedure	0
+Com_create_server	0
+Com_create_table	0
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	0
+Com_dealloc_sql	0
+Com_delete	0
+Com_delete_multi	0
+Com_do	0
+Com_drop_compression_dictionary	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	2
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_server	0
+Com_drop_table	0
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	0
+Com_empty_query	0
+Com_execute_sql	0
+Com_explain_other	0
+Com_flush	0
+Com_get_diagnostics	0
+Com_grant	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	126534105
+Com_insert_select	0
+Com_install_plugin	0
+Com_kill	1
+Com_load	0
+Com_lock_tables	0
+Com_lock_tables_for_backup	0
+Com_lock_binlog_for_backup	0
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_resignal	0
+Com_revoke	0
+Com_revoke_all	0
+Com_rollback	0
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	60017879
+Com_set_option	2530
+Com_signal	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	0
+Com_show_client_statistics	0
+Com_show_collations	0
+Com_show_create_db	0
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	8
+Com_show_create_trigger	0
+Com_show_databases	3
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	25
+Com_show_events	0
+Com_show_errors	0
+Com_show_fields	4
+Com_show_function_code	0
+Com_show_function_status	0
+Com_show_grants	0
+Com_show_index_statistics	0
+Com_show_keys	0
+Com_show_master_status	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_code	0
+Com_show_procedure_status	0
+Com_show_processlist	0
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_relaylog_events	0
+Com_show_slave_hosts	0
+Com_show_slave_status	1660
+Com_show_status	434
+Com_show_storage_engines	0
+Com_show_table_statistics	0
+Com_show_table_status	31
+Com_show_tables	7
+Com_show_thread_statistics	0
+Com_show_triggers	0
+Com_show_user_statistics	0
+Com_show_variables	1417
+Com_show_warnings	0
+Com_show_create_user	0
+Com_shutdown	0
+Com_slave_start	0
+Com_slave_stop	0
+Com_group_replication_start	0
+Com_group_replication_stop	0
+Com_stmt_execute	0
+Com_stmt_close	0
+Com_stmt_fetch	0
+Com_stmt_prepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_truncate	4
+Com_uninstall_plugin	0
+Com_unlock_binlog	0
+Com_unlock_tables	0
+Com_update	0
+Com_update_multi	0
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Com_stmt_reprepare	0
+Connection_errors_accept	0
+Connection_errors_internal	0
+Connection_errors_max_connections	0
+Connection_errors_peer_address	0
+Connection_errors_select	0
+Connection_errors_tcpwrap	0
+Connections	1280
+Created_tmp_disk_tables	22411
+Created_tmp_files	6
+Created_tmp_tables	317998
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Flush_commands	1
+Handler_commit	66534111
+Handler_delete	2
+Handler_discover	0
+Handler_external_lock	253100781
+Handler_mrr_init	0
+Handler_prepare	0
+Handler_read_first	2139
+Handler_read_key	60079238
+Handler_read_last	0
+Handler_read_next	302038
+Handler_read_prev	0
+Handler_read_rnd	72
+Handler_read_rnd_next	4950491
+Handler_rollback	2
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_update	65416
+Handler_write	127857076
+Innodb_background_log_sync	24250
+Innodb_buffer_pool_dump_status	Dumping of buffer pool not started
+Innodb_buffer_pool_load_status	Buffer pool(s) load completed at 190322 19:08:06
+Innodb_buffer_pool_resize_status	
+Innodb_buffer_pool_pages_data	64559
+Innodb_buffer_pool_bytes_data	1057734656
+Innodb_buffer_pool_pages_dirty	58782
+Innodb_buffer_pool_bytes_dirty	963084288
+Innodb_buffer_pool_pages_flushed	7625720
+Innodb_buffer_pool_pages_free	964
+Innodb_buffer_pool_pages_LRU_flushed	0
+Innodb_buffer_pool_pages_made_not_young	3073792
+Innodb_buffer_pool_pages_made_young	6960901
+Innodb_buffer_pool_pages_misc	5
+Innodb_buffer_pool_pages_old	23811
+Innodb_buffer_pool_pages_total	65528
+Innodb_buffer_pool_read_ahead_rnd	0
+Innodb_buffer_pool_read_ahead	0
+Innodb_buffer_pool_read_ahead_evicted	0
+Innodb_buffer_pool_read_requests	1554772586
+Innodb_buffer_pool_reads	1687981
+Innodb_buffer_pool_wait_free	127650
+Innodb_buffer_pool_write_requests	594307341
+Innodb_checkpoint_age	204581753
+Innodb_checkpoint_max_age	434154333
+Innodb_data_fsyncs	270673
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	28504691712
+Innodb_data_reads	1739819
+Innodb_data_writes	6613933
+Innodb_data_written	134950495232
+Innodb_dblwr_pages_written	6428881
+Innodb_dblwr_writes	67819
+Innodb_ibuf_free_list	1404
+Innodb_ibuf_segment_size	1406
+Innodb_log_waits	0
+Innodb_log_write_requests	59472486
+Innodb_log_writes	83551
+Innodb_lsn_current	45144139706
+Innodb_lsn_flushed	45143670047
+Innodb_lsn_last_checkpoint	44939557953
+Innodb_master_thread_active_loops	21936
+Innodb_master_thread_idle_loops	2315
+Innodb_max_trx_id	71452337
+Innodb_mem_adaptive_hash	17822528
+Innodb_mem_dictionary	4655367
+Innodb_oldest_view_low_limit_trx_id	0
+Innodb_os_log_fsyncs	87561
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	29422405120
+Innodb_page_size	16384
+Innodb_pages_created	1084288
+Innodb_pages_read	1739783
+Innodb_pages0_read	24
+Innodb_pages_written	6440921
+Innodb_purge_trx_id	71232826
+Innodb_purge_undo_no	0
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	0
+Innodb_row_lock_time_avg	0
+Innodb_row_lock_time_max	0
+Innodb_row_lock_waits	0
+Innodb_rows_deleted	0
+Innodb_rows_inserted	128128497
+Innodb_rows_read	1896442
+Innodb_rows_updated	0
+Innodb_num_open_files	27
+Innodb_truncated_status_writes	0
+Innodb_available_undo_logs	128
+Innodb_secondary_index_triggered_cluster_reads	302036
+Innodb_secondary_index_triggered_cluster_reads_avoided	0
+Innodb_buffered_aio_submitted	0
+Innodb_scan_pages_contiguous	0
+Innodb_scan_pages_disjointed	61969
+Innodb_scan_pages_total_seek_distance	3752802090
+Innodb_scan_data_size	653004794
+Innodb_scan_deleted_recs_size	157813578
+Innodb_scrub_background_page_reorganizations	0
+Innodb_scrub_background_page_splits	0
+Innodb_scrub_background_page_split_failures_underflow	0
+Innodb_scrub_background_page_split_failures_out_of_filespace	0
+Innodb_scrub_background_page_split_failures_missing_index	0
+Innodb_scrub_background_page_split_failures_unknown	0
+Innodb_scrub_log	0
+Innodb_encryption_rotation_pages_read_from_cache	0
+Innodb_encryption_rotation_pages_read_from_disk	0
+Innodb_encryption_rotation_pages_modified	0
+Innodb_encryption_rotation_pages_flushed	0
+Innodb_encryption_rotation_estimated_iops	0
+Innodb_encryption_key_rotation_list_length	0
+Innodb_encryption_n_merge_blocks_encrypted	0
+Innodb_encryption_n_merge_blocks_decrypted	0
+Innodb_encryption_n_rowlog_blocks_encrypted	0
+Innodb_encryption_n_rowlog_blocks_decrypted	0
+Innodb_num_pages_encrypted	0
+Innodb_num_pages_decrypted	0
+Key_blocks_not_flushed	0
+Key_blocks_unused	6698
+Key_blocks_used	3
+Key_read_requests	14124
+Key_reads	2679
+Key_write_requests	10
+Key_writes	10
+Locked_connects	0
+Max_execution_time_exceeded	0
+Max_execution_time_set	0
+Max_execution_time_set_failed	0
+Max_used_connections	7
+Max_used_connections_time	2019-03-22 19:22:53
+Not_flushed_delayed_rows	0
+Ongoing_anonymous_transaction_count	0
+Open_files	0
+Open_streams	0
+Open_table_definitions	223
+Open_tables	416
+Opened_files	16880
+Opened_table_definitions	227
+Opened_tables	179726
+Performance_schema_accounts_lost	0
+Performance_schema_cond_classes_lost	0
+Performance_schema_cond_instances_lost	0
+Performance_schema_digest_lost	0
+Performance_schema_file_classes_lost	0
+Performance_schema_file_handles_lost	0
+Performance_schema_file_instances_lost	0
+Performance_schema_hosts_lost	0
+Performance_schema_index_stat_lost	0
+Performance_schema_locker_lost	0
+Performance_schema_memory_classes_lost	0
+Performance_schema_metadata_lock_lost	0
+Performance_schema_mutex_classes_lost	0
+Performance_schema_mutex_instances_lost	0
+Performance_schema_nested_statement_lost	0
+Performance_schema_prepared_statements_lost	0
+Performance_schema_program_lost	0
+Performance_schema_rwlock_classes_lost	0
+Performance_schema_rwlock_instances_lost	0
+Performance_schema_session_connect_attrs_lost	0
+Performance_schema_socket_classes_lost	0
+Performance_schema_socket_instances_lost	0
+Performance_schema_stage_classes_lost	0
+Performance_schema_statement_classes_lost	0
+Performance_schema_table_handles_lost	0
+Performance_schema_table_instances_lost	0
+Performance_schema_table_lock_stat_lost	0
+Performance_schema_thread_classes_lost	0
+Performance_schema_thread_instances_lost	0
+Performance_schema_users_lost	0
+Prepared_stmt_count	0
+Qcache_free_blocks	1
+Qcache_free_memory	1031832
+Qcache_hits	0
+Qcache_inserts	0
+Qcache_lowmem_prunes	0
+Qcache_not_cached	17874
+Qcache_queries_in_cache	0
+Qcache_total_blocks	1
+Queries	486570258
+Questions	66567700
+Rsa_public_key	-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvU67SgBvyqRqaXYnEUFR\nGlyS+65Bq5Si4tRQIKbIX+nFTFaZkvz6Ds5vJ4INNY9ImSZElbEBgo/f5Bn2fkdG\nqPjyyixrU7G+E5qGmQ2XnWTlLDKGD5TTbecLt7KCWoFHkfYgw/ctCbheeVkkEDmR\n3bIFxxDkBRq6n07++Niu+QP/5A1ADbFimKDkYLhQrDsvaDYEZuychk7jUF3nzb/B\nCdrahkjfLqJbXs0Sq9FDp4Yyl43g/iaNKkF9ALzAP4w0LhOMeGcRlfHGrkC5EQve\niNdStT0c+BEve83FOIf8OyMxjhDy6ivPi2Bc1m3DZZ4e2oJNgbTzJP/JIIdbi8lR\nkwIDAQAB\n-----END PUBLIC KEY-----\n
+Select_full_join	471
+Select_full_range_join	0
+Select_range	0
+Select_range_check	0
+Select_scan	19228
+Slave_open_temp_tables	0
+Slow_launch_threads	0
+Slow_queries	0
+Sort_merge_passes	0
+Sort_range	0
+Sort_rows	72
+Sort_scan	11
+Ssl_accept_renegotiates	0
+Ssl_accepts	12
+Ssl_callback_cache_hits	0
+Ssl_cipher	DHE-RSA-AES256-SHA
+Ssl_cipher_list	ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:DHE-RSA-AES128-SHA256:DHE-DSS-AES128-SHA256:DHE-DSS-AES256-GCM-SHA384:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-DSS-AES128-SHA:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DHE-RSA-AES256-GCM-SHA384
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	18446744073709551615
+Ssl_ctx_verify_mode	5
+Ssl_default_timeout	7200
+Ssl_finished_accepts	12
+Ssl_finished_connects	0
+Ssl_server_not_after	Aug  3 14:19:29 2028 GMT
+Ssl_server_not_before	Aug  6 14:19:29 2018 GMT
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	SERVER
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	128
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	12
+Ssl_verify_depth	18446744073709551615
+Ssl_verify_mode	5
+Ssl_version	TLSv1.1
+Table_locks_immediate	16270
+Table_locks_waited	0
+Table_open_cache_hits	126699362
+Table_open_cache_misses	179726
+Table_open_cache_overflows	179299
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threadpool_idle_threads	0
+Threadpool_threads	0
+Threads_cached	2
+Threads_connected	5
+Threads_created	7
+Threads_running	1
+Uptime	28217
+Uptime_since_flush_status	28217
+*************************** 1. row ***************************
+           Name: data_id
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 49365728
+ Avg_row_length: 137
+    Data_length: 6803161088
+Max_data_length: 0
+   Index_length: 1561329664
+      Data_free: 7340032
+ Auto_increment: NULL
+    Create_time: 2019-03-22 12:52:32
+    Update_time: 2019-03-23 02:58:22
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 
+*************************** 2. row ***************************
+           Name: data_uuid
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 0
+ Avg_row_length: 0
+    Data_length: 16384
+Max_data_length: 0
+   Index_length: 32768
+      Data_free: 0
+ Auto_increment: NULL
+    Create_time: 2019-03-22 12:52:08
+    Update_time: 2019-03-22 21:00:40
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 
+*************************** 3. row ***************************
+           Name: uuid
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 49549052
+ Avg_row_length: 63
+    Data_length: 3138387968
+Max_data_length: 0
+   Index_length: 1222639616
+      Data_free: 7340032
+ Auto_increment: 50000001
+    Create_time: 2019-03-22 12:46:29
+    Update_time: 2019-03-23 02:58:22
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment:
+
+mysql> select count(*), st.name,INDEX_NAME, avg(NUMBER_RECORDS), avg(DATA_SIZE) from information_schema.INNODB_BUFFER_PAGE bp  inner join information_schema.INNODB_SYS_TABLESPACES st on bp.space = st.space group by st.name,INDEX_NAME order by count(*) desc limit 20;
++----------+--------------------------+-------------+---------------------+----------------+
+| count(*) | name                     | INDEX_NAME  | avg(NUMBER_RECORDS) | avg(DATA_SIZE) |
++----------+--------------------------+-------------+---------------------+----------------+
+|    59862 | UUID_id/uuid             | idx_hash    |            768.8283 |      9999.1328 |
+|     2218 | UUID_id/uuid             | PRIMARY     |            327.6916 |     15101.1767 |
+|     1763 | UUID_id/data_id          | PRIMARY     |            121.2036 |     15106.1634 |
+|      230 | UUID_id/data_id          | idx_payload |            922.3174 |     15692.0043 |
+|      179 | UUID_id/data_id          | idx_created |           1186.3408 |     15429.4469 |
+|       25 | UUID_id/uuid             | NULL        |              0.0000 |         0.0000 |
+|        6 | UUID_id/data_id          | NULL        |              0.0000 |         0.0000 |
+|        1 | mysql/innodb_table_stats | PRIMARY     |              6.0000 |       387.0000 |
+|        1 | mysql/innodb_index_stats | PRIMARY     |             45.0000 |      4334.0000 |
+|        1 | mysql/innodb_table_stats | NULL        |              0.0000 |         0.0000 |
++----------+--------------------------+-------------+---------------------+----------------+
+10 rows in set (0.44 sec)
+

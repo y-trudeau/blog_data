@@ -1,0 +1,57 @@
+*************************** 1. row ***************************
+           Name: data_uuid
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 2070789
+ Avg_row_length: 88
+    Data_length: 183500800
+Max_data_length: 0
+   Index_length: 0
+      Data_free: 7340032
+ Auto_increment: NULL
+    Create_time: 2019-10-25 15:04:05
+    Update_time: 2019-10-25 15:14:21
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 
+*************************** 2. row ***************************
+           Name: dedup
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 0
+ Avg_row_length: 0
+    Data_length: 16384
+Max_data_length: 0
+   Index_length: 16384
+      Data_free: 0
+ Auto_increment: NULL
+    Create_time: 2019-10-24 20:10:15
+    Update_time: 2019-10-25 13:55:36
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 
+*************************** 3. row ***************************
+           Name: uuid_to_id
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 0
+ Avg_row_length: 0
+    Data_length: 16384
+Max_data_length: 0
+   Index_length: 16384
+      Data_free: 0
+ Auto_increment: 1
+    Create_time: 2019-10-24 19:19:48
+    Update_time: 2019-10-25 14:12:12
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 

@@ -1,0 +1,38 @@
+*************************** 1. row ***************************
+           Name: data_uuid
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 2588008
+ Avg_row_length: 23
+    Data_length: 60375040
+Max_data_length: 0
+   Index_length: 0
+      Data_free: 4194304
+ Auto_increment: NULL
+    Create_time: 2019-10-24 19:28:27
+    Update_time: 2019-10-24 19:40:55
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 
+*************************** 2. row ***************************
+           Name: uuid_to_id
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 2580778
+ Avg_row_length: 64
+    Data_length: 167411712
+Max_data_length: 0
+   Index_length: 60375040
+      Data_free: 7340032
+ Auto_increment: 2590857
+    Create_time: 2019-10-24 19:19:48
+    Update_time: 2019-10-24 19:40:55
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 

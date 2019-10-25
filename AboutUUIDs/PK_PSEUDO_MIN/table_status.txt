@@ -1,0 +1,19 @@
+*************************** 1. row ***************************
+           Name: data_uuid
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 4145662
+ Avg_row_length: 87
+    Data_length: 361758720
+Max_data_length: 0
+   Index_length: 0
+      Data_free: 7340032
+ Auto_increment: NULL
+    Create_time: 2019-10-24 18:22:53
+    Update_time: 2019-10-24 18:35:42
+     Check_time: NULL
+      Collation: latin1_swedish_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 
