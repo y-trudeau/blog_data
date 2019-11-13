@@ -6,9 +6,9 @@ BEGIN
     DECLARE cNewUUID char(36);
     DECLARE cMd5Val char(32);
    
-    set cMd5Val = md5(concat(rand(),now(4)));
+    set cMd5Val = md5(concat(rand(),now(6)));
     set cNewUUID = concat(left(md5(concat(year(now()),week(now()))),4),left(cMd5Val,4),'-',
-	mid(cMd5Val,5,4),'-',mid(cMd5Val,9,4),'-',mid(cMd5Val,13,4),'-',mid(cMd5Val,17,12));
+	mid(cMd5Val,5,4),'-4',mid(cMd5Val,9,3),'-',mid(cMd5Val,13,4),'-',mid(cMd5Val,17,12));
 
     RETURN cNewUUID;
 END;;
