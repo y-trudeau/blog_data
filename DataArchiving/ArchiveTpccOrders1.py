@@ -30,7 +30,7 @@ for line in sys.stdin:
     if j['database'] == dbName and j['table'] == tableName:
         debug_print(line)
         if j['type'] == 'insert':
-            # Let's build an replace into statement
+            # Let's build an insert ignore statement
             sql += 'insert ignore into ' + destDbName + '.' + tableName
             sql += ' set o_id = ' + str(j['data']['o_id'])
             sql += ', o_d_id = ' + str(j['data']['o_d_id'])
