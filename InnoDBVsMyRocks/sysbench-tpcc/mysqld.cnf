@@ -1,0 +1,61 @@
+#
+# The Percona Server 5.7 configuration file.
+#
+# One can use all long options that the program supports.
+# Run program with --help to get a list of available options and with
+# --print-defaults to see which it would actually understand and use.
+#
+# For explanations see
+# http://dev.mysql.com/doc/mysql/en/server-system-variables.html
+
+[mysqld]
+user   = mysql
+pid-file = /var/run/mysqld/mysqld.pid
+socket   = /var/run/mysqld/mysqld.sock
+port   = 3306
+basedir    = /usr
+datadir    = /var/lib/mysql
+tmpdir   = /tmp
+lc-messages-dir  = /usr/share/mysql
+explicit_defaults_for_timestamp
+
+skip-log-bin
+skip-name-resolve
+
+log-error    = /var/log/mysql/error.log
+
+innodb_buffer_pool_size=128M
+#innodb_buffer_pool_size=3G
+innodb_log_file_size=256M
+innodb_flush_method=O_DIRECT
+innodb_flush_log_at_trx_commit=1
+
+performance_schema = off
+
+transaction_isolation                           = READ-COMMITTED
+rocksdb_block_cache_size                        = 512M 
+rocksdb_max_open_files                          = -1
+rocksdb_validate_tables                         = 0
+rocksdb_large_prefix                            = 1
+rocksdb_max_background_jobs                     = 8
+rocksdb_max_total_wal_size                      = 1G
+rocksdb_wal_recovery_mode                       = 0
+rocksdb_flush_log_at_trx_commit                 = 0
+rocksdb_block_size                              = 16384
+rocksdb_use_direct_reads                        = 0
+rocksdb_table_cache_numshardbits                = 6
+rocksdb_bytes_per_sync                          = 4194304
+rocksdb_wal_bytes_per_sync                      = 4194304
+rocksdb_use_direct_io_for_flush_and_compaction  = 1
+rocksdb_rate_limiter_bytes_per_sec              = 2048000 
+rocksdb_compaction_sequential_deletes_count_sd  = 1
+rocksdb_compaction_sequential_deletes           = 199999
+rocksdb_compaction_sequential_deletes_window    = 200000
+rocksdb_default_cf_options                      = write_buffer_size=64m;target_file_size_base=32m;max_bytes_for_level_base=512m;level0_file_num_compaction_trigger=4;level0_slowdown_writes_trigger=10;level0_stop_writes_trigger=15;max_write_buffer_number=4;compression_per_level=kLZ4Compression;bottommost_compression=kZSTD;compression_opts=-14:1:0;block_based_table_factory={cache_index_and_filter_blocks=1;filter_policy=bloomfilter:10:false;whole_key_filtering=1};level_compaction_dynamic_level_bytes=true;optimize_filters_for_hits=true;compaction_pri=kMinOverlappingRatio
+
+
+# Recommended in standard MySQL setup
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_ALL_TABLES
+
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
