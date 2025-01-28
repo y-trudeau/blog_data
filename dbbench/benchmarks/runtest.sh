@@ -31,19 +31,21 @@ mysql -u dbbench -pdbbench -e 'show global status;' > mysql_status_start.out
 # Run the actual test
 pmm-admin annotate "start bench $1"
 
+rm -f stop_collect
+
 if true; then
-    #head -n 20000000 /mnt/dataset/generator/100M_inserts.sql | mysql -u dbbench -pdbbench dbbench
-    cat /mnt/dataset/generator/5M_updates.sql | mysql -u dbbench -pdbbench dbbench
+    #head -n 20000000 ../../generator/100M_inserts.sql | mysql -u dbbench -pdbbench dbbench
+    cat ../../generator/5M_updates.sql | mysql -u dbbench -pdbbench dbbench
     while true; do
         dirty=$(mysql -BN -e "show global status like 'Innodb_buffer_pool_pages_dirty';" | cut -f2)
-        if [ "$dirty" -gt 0 ]; then
-            break
+        if [ "$dirty" -gt 0 ] || [ -f stop_collect ]; then
+            sleep 5 
         else
-            sleep 5
+            break
         fi
     done
 else
-    (cat /mnt/dataset/generator/5M_updates.sql) | psql dbbench pmm -q -f -
+    (cat ../../generator/5M_updates.sql) | psql dbbench pmm -q -f -
 fi
 
 
