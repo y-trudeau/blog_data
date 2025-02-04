@@ -1,0 +1,27 @@
+#
+# The Percona Server 8.0 configuration file.
+#
+# For explanations see
+# http://dev.mysql.com/doc/mysql/en/server-system-variables.html
+
+[mysqld]
+pid-file	= /var/run/mysqld/mysqld.pid
+socket		= /var/run/mysqld/mysqld.sock
+datadir		= /mnt/data/mysql
+log-error	= /var/log/mysql/error.log
+
+innodb_buffer_pool_instances = 1
+innodb_buffer_pool_size = 2500M
+innodb_redo_log_capacity = 2G
+innodb_flush_method = O_DIRECT
+innodb_flush_log_at_trx_commit=0
+innodb_buffer_pool_load_at_startup = OFF
+innodb_flush_neighbors=0
+innodb_max_dirty_pages_pct_lwm=0
+
+performance_schema=ON
+performance-schema-instrument='statement/%=ON'
+performance-schema-consumer-statements-digest=ON
+innodb_monitor_enable=all
+
+skip-log-bin
