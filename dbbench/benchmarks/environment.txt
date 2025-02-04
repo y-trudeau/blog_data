@@ -1,0 +1,31 @@
+KVM, Ubuntu 24.04, 4GB of RAM, 100GB storage, IOPs limited to 1000/s of up to 16KB (like AWS EBS)
+
+```
+<domain type='kvm' id='18'>
+  <name>dbbench</name>
+  <uuid>c1a3427a-3f21-4627-86ab-3054a0f02269</uuid>
+  <metadata>
+    <libosinfo:libosinfo xmlns:libosinfo="http://libosinfo.org/xmlns/libvirt/domain/1.0">
+      <libosinfo:os id="http://ubuntu.com/ubuntu/24.04"/>
+    </libosinfo:libosinfo>
+  </metadata>
+  <memory unit='KiB'>4194304</memory>
+  <currentMemory unit='KiB'>4194304</currentMemory>
+  <vcpu placement='static'>2</vcpu>
+...
+   <disk type='block' device='disk'>
+      <driver name='qemu' type='raw' cache='none' io='native'/>
+      <source dev='/dev/zvol/data/kvm/dbbenchdata'/>
+      <backingStore/>
+      <iotune>
+           <total_iops_sec>1000</total_iops_sec>
+           <total_bytes_sec>16384000</total_bytes_sec>
+      </iotune>
+      <target dev='vdb' bus='virtio'/>
+      <alias name='virtio-disk1'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x09' function='0x0'/>
+    </disk>
+...
+
+```
+  
