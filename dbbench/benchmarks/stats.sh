@@ -16,5 +16,15 @@ writeSect_end=$(awk '{print $10}' < $1/vda_stats.end)
 writeMs_end=$(awk '{print $11}' < $1/vda_stats.end)
 time_end=$(tail -n1 $1/end)
 
+if [ "$readMs_end" -lt "$readMs_start" ]; then
+   let readMs_end=readMs_end+4294967296
+fi 
+
+if [ "$writeMs_end" -lt "$writeMs_start" ]; then
+   let writeMs_end=writeMs_end+4294967296
+fi 
+
+
+
 echo "rIop: $((reads_end-reads_start)), readGB: $(((readSect_end-readSect_start)*512/1024/1024/1024)), readMs: $((readMs_end-readMs_start)), wIop: $((writes_end-writes_start)), writeGB: $(((writeSect_end-writeSect_start)*512/1024/1024/1024)), writeMs: $((writeMs_end-writeMs_start)), duration: $((time_end-time_start))"
 

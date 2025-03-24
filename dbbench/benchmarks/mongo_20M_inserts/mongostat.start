@@ -1,0 +1,2926 @@
+{
+  host: 'dbbench',
+  version: '6.0.20-17',
+  process: 'mongod',
+  pid: Long('2565944'),
+  uptime: 170595,
+  uptimeMillis: Long('170594449'),
+  uptimeEstimate: Long('170594'),
+  localTime: ISODate('2025-03-19T15:00:54.247Z'),
+  activeIndexBuilds: {
+    total: 0,
+    phases: {
+      scanCollection: 0,
+      drainSideWritesTable: 0,
+      drainSideWritesTablePreCommit: 0,
+      waitForCommitQuorum: 0,
+      drainSideWritesTableOnCommit: 0,
+      processConstraintsViolatonTableOnCommit: 0,
+      commit: 0
+    }
+  },
+  asserts: {
+    regular: 0,
+    warning: 0,
+    msg: 0,
+    user: 647,
+    tripwire: 0,
+    rollovers: 0
+  },
+  batchedDeletes: {
+    batches: 0,
+    docs: 0,
+    stagedSizeBytes: 0,
+    timeMillis: Long('0')
+  },
+  catalogStats: {
+    collections: 1,
+    capped: 0,
+    clustered: 0,
+    timeseries: 0,
+    views: 0,
+    internalCollections: 4,
+    internalViews: 0
+  },
+  connections: {
+    current: 5,
+    available: 51195,
+    totalCreated: 239,
+    active: 1,
+    threaded: 5,
+    exhaustIsMaster: 0,
+    exhaustHello: 0,
+    awaitingTopologyChanges: 0
+  },
+  electionMetrics: {
+    stepUpCmd: {
+      called: Long('0'),
+      successful: Long('0')
+    },
+    priorityTakeover: {
+      called: Long('0'),
+      successful: Long('0')
+    },
+    catchUpTakeover: {
+      called: Long('0'),
+      successful: Long('0')
+    },
+    electionTimeout: {
+      called: Long('0'),
+      successful: Long('0')
+    },
+    freezeTimeout: {
+      called: Long('0'),
+      successful: Long('0')
+    },
+    numStepDownsCausedByHigherTerm: Long('0'),
+    numCatchUps: Long('0'),
+    numCatchUpsSucceeded: Long('0'),
+    numCatchUpsAlreadyCaughtUp: Long('0'),
+    numCatchUpsSkipped: Long('0'),
+    numCatchUpsTimedOut: Long('0'),
+    numCatchUpsFailedWithError: Long('0'),
+    numCatchUpsFailedWithNewTerm: Long('0'),
+    numCatchUpsFailedWithReplSetAbortPrimaryCatchUpCmd: Long('0'),
+    averageCatchUpOps: 0
+  },
+  extra_info: {
+    note: 'fields vary by platform',
+    user_time_us: Long('1685748637'),
+    system_time_us: Long('710350677'),
+    maximum_resident_set_kb: Long('988684'),
+    input_blocks: Long('927728'),
+    output_blocks: Long('55344192'),
+    page_reclaims: Long('248751'),
+    page_faults: Long('161'),
+    voluntary_context_switches: Long('8936128'),
+    involuntary_context_switches: Long('611022'),
+    threads: Long('36')
+  },
+  featureCompatibilityVersion: {
+    major: 6,
+    minor: 0,
+    transitioning: 0
+  },
+  flowControl: {
+    enabled: true,
+    targetRateLimit: 1000000000,
+    timeAcquiringMicros: Long('578570'),
+    locksPerKiloOp: 0,
+    sustainerRate: 0,
+    isLagged: false,
+    isLaggedCount: 0,
+    isLaggedTimeMicros: Long('0')
+  },
+  globalLock: {
+    totalTime: Long('170594541000'),
+    currentQueue: {
+      total: 0,
+      readers: 0,
+      writers: 0
+    },
+    activeClients: {
+      total: 0,
+      readers: 0,
+      writers: 0
+    }
+  },
+  indexBulkBuilder: {
+    count: Long('0'),
+    resumed: Long('0'),
+    filesOpenedForExternalSort: Long('0'),
+    filesClosedForExternalSort: Long('0'),
+    spilledRanges: Long('0'),
+    bytesSpilledUncompressed: Long('0'),
+    bytesSpilled: Long('0')
+  },
+  indexStats: {
+    count: Long('7'),
+    features: {
+      '2d': {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      '2dsphere': {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      '2dsphere_bucket': {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      collation: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      compound: {
+        count: Long('6'),
+        accesses: Long('0')
+      },
+      hashed: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      id: {
+        count: Long('1'),
+        accesses: Long('0')
+      },
+      normal: {
+        count: Long('6'),
+        accesses: Long('0')
+      },
+      partial: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      prepareUnique: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      single: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      sparse: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      text: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      ttl: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      unique: {
+        count: Long('0'),
+        accesses: Long('0')
+      },
+      wildcard: {
+        count: Long('0'),
+        accesses: Long('0')
+      }
+    }
+  },
+  locks: {
+    ParallelBatchWriterMode: {
+      acquireCount: {
+        r: Long('880581')
+      }
+    },
+    FeatureCompatibilityVersion: {
+      acquireCount: {
+        r: Long('344413'),
+        w: Long('880551')
+      }
+    },
+    ReplicationStateTransition: {
+      acquireCount: {
+        w: Long('1051175')
+      }
+    },
+    Global: {
+      acquireCount: {
+        r: Long('344413'),
+        w: Long('880546'),
+        W: Long('5')
+      }
+    },
+    Database: {
+      acquireCount: {
+        r: Long('30'),
+        w: Long('880531'),
+        R: Long('1'),
+        W: Long('1')
+      }
+    },
+    Collection: {
+      acquireCount: {
+        r: Long('34'),
+        w: Long('880520'),
+        W: Long('9')
+      }
+    },
+    Mutex: {
+      acquireCount: {
+        r: Long('872622')
+      }
+    },
+    oplog: {
+      acquireCount: {
+        w: Long('1')
+      }
+    }
+  },
+  logicalSessionRecordCache: {
+    activeSessionsCount: 8,
+    sessionsCollectionJobCount: 569,
+    lastSessionsCollectionJobDurationMillis: 0,
+    lastSessionsCollectionJobTimestamp: ISODate('2025-03-19T14:57:40.576Z'),
+    lastSessionsCollectionJobEntriesRefreshed: 0,
+    lastSessionsCollectionJobEntriesEnded: 0,
+    lastSessionsCollectionJobCursorsClosed: 0,
+    transactionReaperJobCount: 569,
+    lastTransactionReaperJobDurationMillis: 0,
+    lastTransactionReaperJobTimestamp: ISODate('2025-03-19T14:57:40.577Z'),
+    lastTransactionReaperJobEntriesCleanedUp: 0,
+    sessionCatalogSize: 0
+  },
+  network: {
+    bytesIn: Long('250952105'),
+    bytesOut: Long('56555262'),
+    physicalBytesIn: Long('250928789'),
+    physicalBytesOut: Long('56555262'),
+    numSlowDNSOperations: Long('0'),
+    numSlowSSLOperations: Long('0'),
+    numRequests: Long('868630'),
+    tcpFastOpen: {
+      kernelSetting: Long('1'),
+      serverSupported: true,
+      clientSupported: true,
+      accepted: Long('0')
+    },
+    compression: {
+      snappy: {
+        compressor: {
+          bytesIn: Long('0'),
+          bytesOut: Long('0')
+        },
+        decompressor: {
+          bytesIn: Long('0'),
+          bytesOut: Long('0')
+        }
+      },
+      zstd: {
+        compressor: {
+          bytesIn: Long('0'),
+          bytesOut: Long('0')
+        },
+        decompressor: {
+          bytesIn: Long('0'),
+          bytesOut: Long('0')
+        }
+      },
+      zlib: {
+        compressor: {
+          bytesIn: Long('0'),
+          bytesOut: Long('0')
+        },
+        decompressor: {
+          bytesIn: Long('0'),
+          bytesOut: Long('0')
+        }
+      }
+    },
+    serviceExecutors: {
+      passthrough: {
+        threadsRunning: 5,
+        clientsInTotal: 5,
+        clientsRunning: 5,
+        clientsWaitingForData: 0
+      },
+      fixed: {
+        threadsRunning: 1,
+        clientsInTotal: 0,
+        clientsRunning: 0,
+        clientsWaitingForData: 0
+      }
+    }
+  },
+  opLatencies: {
+    reads: {
+      latency: Long('762134'),
+      ops: Long('48')
+    },
+    writes: {
+      latency: Long('708138706'),
+      ops: Long('867827')
+    },
+    commands: {
+      latency: Long('286348'),
+      ops: Long('754')
+    },
+    transactions: {
+      latency: Long('0'),
+      ops: Long('0')
+    }
+  },
+  opcounters: {
+    insert: Long('867833'),
+    query: Long('579'),
+    update: Long('84'),
+    delete: Long('5'),
+    getmore: Long('1'),
+    command: Long('1895')
+  },
+  opcountersRepl: {
+    insert: Long('0'),
+    query: Long('0'),
+    update: Long('0'),
+    delete: Long('0'),
+    getmore: Long('0'),
+    command: Long('0')
+  },
+  readConcernCounters: {
+    nonTransactionOps: {
+      none: Long('47'),
+      noneInfo: {
+        CWRC: {
+          local: Long('0'),
+          available: Long('0'),
+          majority: Long('0')
+        },
+        implicitDefault: {
+          local: Long('47'),
+          available: Long('0')
+        }
+      },
+      local: Long('0'),
+      available: Long('0'),
+      majority: Long('0'),
+      snapshot: {
+        withClusterTime: Long('0'),
+        withoutClusterTime: Long('0')
+      },
+      linearizable: Long('0')
+    },
+    transactionOps: {
+      none: Long('0'),
+      noneInfo: {
+        CWRC: {
+          local: Long('0'),
+          majority: Long('0')
+        },
+        implicitDefault: {
+          local: Long('0')
+        }
+      },
+      local: Long('0'),
+      majority: Long('0'),
+      snapshot: {
+        withClusterTime: Long('0'),
+        withoutClusterTime: Long('0')
+      }
+    }
+  },
+  scramCache: {
+    'SCRAM-SHA-1': {
+      count: Long('0'),
+      hits: Long('0'),
+      misses: Long('0')
+    },
+    'SCRAM-SHA-256': {
+      count: Long('0'),
+      hits: Long('0'),
+      misses: Long('0')
+    }
+  },
+  security: {
+    authentication: {
+      saslSupportedMechsReceived: Long('0'),
+      mechanisms: {
+        'MONGODB-X509': {
+          speculativeAuthenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          },
+          clusterAuthenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          },
+          authenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          }
+        },
+        'SCRAM-SHA-1': {
+          speculativeAuthenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          },
+          clusterAuthenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          },
+          authenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          }
+        },
+        'SCRAM-SHA-256': {
+          speculativeAuthenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          },
+          clusterAuthenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          },
+          authenticate: {
+            received: Long('0'),
+            successful: Long('0')
+          }
+        }
+      }
+    }
+  },
+  storageEngine: {
+    name: 'wiredTiger',
+    supportsCommittedReads: true,
+    oldestRequiredTimestampForCrashRecovery: Timestamp({ t: 0, i: 0 }),
+    supportsPendingDrops: true,
+    dropPendingIdents: Long('0'),
+    supportsSnapshotReadConcern: true,
+    readOnly: false,
+    persistent: true,
+    backupCursorOpen: false
+  },
+  tcmalloc: {
+    generic: {
+      current_allocated_bytes: 97581696,
+      heap_size: 986808320
+    },
+    tcmalloc: {
+      pageheap_free_bytes: 632889344,
+      pageheap_unmapped_bytes: 41947136,
+      max_total_thread_cache_bytes: 512753664,
+      current_total_thread_cache_bytes: 77088512,
+      total_free_bytes: 214390144,
+      central_cache_free_bytes: 133502464,
+      transfer_cache_free_bytes: 3799168,
+      thread_cache_free_bytes: 77088512,
+      aggressive_memory_decommit: 0,
+      pageheap_committed_bytes: 944861184,
+      pageheap_scavenge_count: 952,
+      pageheap_commit_count: 4493,
+      pageheap_total_commit_bytes: 1229852672,
+      pageheap_decommit_count: 952,
+      pageheap_total_decommit_bytes: 284991488,
+      pageheap_reserve_count: 803,
+      pageheap_total_reserve_bytes: 986808320,
+      spinlock_total_delay_ns: Long('4675776050'),
+      release_rate: 1,
+      formattedString: '------------------------------------------------\n' +
+        'MALLOC:       97582144 (   93.1 MiB) Bytes in use by application\n' +
+        'MALLOC: +    632889344 (  603.6 MiB) Bytes in page heap freelist\n' +
+        'MALLOC: +    133502464 (  127.3 MiB) Bytes in central cache freelist\n' +
+        'MALLOC: +      3799168 (    3.6 MiB) Bytes in transfer cache freelist\n' +
+        'MALLOC: +     77088064 (   73.5 MiB) Bytes in thread cache freelists\n' +
+        'MALLOC: +      7733248 (    7.4 MiB) Bytes in malloc metadata\n' +
+        'MALLOC:   ------------\n' +
+        'MALLOC: =    952594432 (  908.5 MiB) Actual memory used (physical + swap)\n' +
+        'MALLOC: +     41947136 (   40.0 MiB) Bytes released to OS (aka unmapped)\n' +
+        'MALLOC:   ------------\n' +
+        'MALLOC: =    994541568 (  948.5 MiB) Virtual address space used\n' +
+        'MALLOC:\n' +
+        'MALLOC:          30926              Spans in use\n' +
+        'MALLOC:             33              Thread heaps in use\n' +
+        'MALLOC:           4096              Tcmalloc page size\n' +
+        '------------------------------------------------\n' +
+        'Call ReleaseFreeMemory() to release freelist memory to the OS (via madvise()).\n' +
+        'Bytes released to the OS take up virtual address space but no physical memory.\n'
+    }
+  },
+  tenantMigrations: {
+    currentMigrationsDonating: Long('0'),
+    currentMigrationsReceiving: Long('0'),
+    totalSuccessfulMigrationsDonated: Long('0'),
+    totalSuccessfulMigrationsReceived: Long('0'),
+    totalFailedMigrationsDonated: Long('0'),
+    totalFailedMigrationsReceived: Long('0')
+  },
+  trafficRecording: {
+    running: false
+  },
+  transactions: {
+    retriedCommandsCount: Long('0'),
+    retriedStatementsCount: Long('0'),
+    transactionsCollectionWriteCount: Long('0'),
+    currentActive: Long('0'),
+    currentInactive: Long('0'),
+    currentOpen: Long('0'),
+    totalAborted: Long('0'),
+    totalCommitted: Long('0'),
+    totalStarted: Long('0'),
+    totalPrepared: Long('0'),
+    totalPreparedThenCommitted: Long('0'),
+    totalPreparedThenAborted: Long('0'),
+    currentPrepared: Long('0')
+  },
+  transportSecurity: {
+    '1.0': Long('0'),
+    '1.1': Long('0'),
+    '1.2': Long('0'),
+    '1.3': Long('0'),
+    unknown: Long('0')
+  },
+  twoPhaseCommitCoordinator: {
+    totalCreated: Long('0'),
+    totalStartedTwoPhaseCommit: Long('0'),
+    totalAbortedTwoPhaseCommit: Long('0'),
+    totalCommittedTwoPhaseCommit: Long('0'),
+    currentInSteps: {
+      writingParticipantList: Long('0'),
+      waitingForVotes: Long('0'),
+      writingDecision: Long('0'),
+      waitingForDecisionAcks: Long('0'),
+      deletingCoordinatorDoc: Long('0')
+    }
+  },
+  wiredTiger: {
+    uri: 'statistics:',
+    autocommit: {
+      'retries for readonly operations': 0,
+      'retries for update operations': 0
+    },
+    'block-cache': {
+      'cached blocks updated': 0,
+      'cached bytes updated': 0,
+      'evicted blocks': 0,
+      'file size causing bypass': 0,
+      lookups: 0,
+      'number of blocks not evicted due to overhead': 0,
+      'number of bypasses because no-write-allocate setting was on': 0,
+      'number of bypasses due to overhead on put': 0,
+      'number of bypasses on get': 0,
+      'number of bypasses on put because file is too small': 0,
+      'number of eviction passes': 0,
+      'number of hits': 0,
+      'number of misses': 0,
+      'number of put bypasses on checkpoint I/O': 0,
+      'removed blocks': 0,
+      'total blocks': 0,
+      'total blocks inserted on read path': 0,
+      'total blocks inserted on write path': 0,
+      'total bytes': 0,
+      'total bytes inserted on read path': 0,
+      'total bytes inserted on write path': 0
+    },
+    'block-manager': {
+      'blocks pre-loaded': 1482,
+      'blocks read': 1159720,
+      'blocks written': 4938730,
+      'bytes read': Long('12904222720'),
+      'bytes read via memory map API': 0,
+      'bytes read via system call API': 0,
+      'bytes written': Long('58684620800'),
+      'bytes written for checkpoint': 1371451392,
+      'bytes written via memory map API': 0,
+      'bytes written via system call API': 0,
+      'mapped blocks read': 0,
+      'mapped bytes read': 0,
+      'number of times the file was remapped because it changed size via fallocate or truncate': 0,
+      'number of times the region was remapped via write': 0
+    },
+    cache: {
+      'application threads page read from disk to cache count': 1156593,
+      'application threads page read from disk to cache time (usecs)': 195371383,
+      'application threads page write from cache to disk count': 121278,
+      'application threads page write from cache to disk time (usecs)': 115021756,
+      'bytes allocated for updates': 75345,
+      'bytes belonging to page images in the cache': 47095,
+      'bytes belonging to the history store table in the cache': 597,
+      'bytes currently in the cache': 130736,
+      'bytes dirty in the cache cumulative': Long('67211991806'),
+      'bytes not belonging to page images in the cache': 83640,
+      'bytes read into cache': Long('10519139012'),
+      'bytes written from cache': Long('48265798849'),
+      'checkpoint blocked page eviction': 939,
+      'checkpoint of history store file blocked non-history store page eviction': 0,
+      'eviction calls to get a page': 4912433,
+      'eviction calls to get a page found queue empty': 7799,
+      'eviction calls to get a page found queue empty after locking': 84519,
+      'eviction currently operating in aggressive mode': 0,
+      'eviction empty score': 0,
+      'eviction gave up due to detecting an out of order on disk value behind the last update on the chain': 0,
+      'eviction gave up due to detecting an out of order tombstone ahead of the selected on disk update': 0,
+      'eviction gave up due to detecting an out of order tombstone ahead of the selected on disk update after validating the update chain': 0,
+      'eviction gave up due to detecting out of order timestamps on the update chain after the selected on disk update': 0,
+      'eviction gave up due to needing to remove a record from the history store but checkpoint is running': 0,
+      'eviction passes of a file': 488784,
+      'eviction server candidate queue empty when topping up': 9487,
+      'eviction server candidate queue not empty when topping up': 173811,
+      'eviction server evicting pages': 0,
+      'eviction server skips dirty pages during a running checkpoint': 176072,
+      'eviction server skips metadata pages with history': 0,
+      'eviction server skips pages that are written with transactions greater than the last running': 9845,
+      'eviction server skips pages that previously failed eviction and likely will again': 0,
+      'eviction server skips pages that we do not want to evict': 39273572,
+      'eviction server skips tree that we do not want to evict': 222032,
+      'eviction server skips trees because there are too many active walks': 0,
+      'eviction server skips trees that are being checkpointed': 168,
+      'eviction server skips trees that are configured to stick in cache': 46508,
+      'eviction server skips trees that disable eviction': 46980,
+      'eviction server skips trees that were not useful before': 321602,
+      'eviction server slept, because we did not make progress with eviction': 840311,
+      'eviction server unable to reach eviction goal': 6,
+      'eviction server waiting for a leaf page': 2826,
+      'eviction state': 64,
+      'eviction walk most recent sleeps for checkpoint handle gathering': 0,
+      'eviction walk target pages histogram - 0-9': 67523,
+      'eviction walk target pages histogram - 10-31': 132682,
+      'eviction walk target pages histogram - 128 and higher': 0,
+      'eviction walk target pages histogram - 32-63': 227481,
+      'eviction walk target pages histogram - 64-128': 61098,
+      'eviction walk target pages reduced due to history store cache pressure': 0,
+      'eviction walk target strategy both clean and dirty pages': 0,
+      'eviction walk target strategy only clean pages': 0,
+      'eviction walk target strategy only dirty pages': 488784,
+      'eviction walks abandoned': 8777,
+      'eviction walks gave up because they restarted their walk twice': 6098,
+      'eviction walks gave up because they saw too many pages and found no candidates': 5536,
+      'eviction walks gave up because they saw too many pages and found too few candidates': 3524,
+      'eviction walks random search fails to locate a page, results in a null position': 0,
+      'eviction walks reached end of tree': 35587,
+      'eviction walks restarted': 0,
+      'eviction walks started from root of tree': 19598,
+      'eviction walks started from saved location in tree': 469186,
+      'eviction worker thread active': 4,
+      'eviction worker thread created': 0,
+      'eviction worker thread evicting pages': 4783611,
+      'eviction worker thread removed': 0,
+      'eviction worker thread stable number': 0,
+      'files with active eviction walks': 0,
+      'files with new eviction walks started': 29489,
+      'force re-tuning of eviction workers once in a while': 0,
+      'forced eviction - do not retry count to evict pages selected to evict during reconciliation': 0,
+      'forced eviction - history store pages failed to evict while session has history store cursor open': 0,
+      'forced eviction - history store pages selected while session has history store cursor open': 0,
+      'forced eviction - history store pages successfully evicted while session has history store cursor open': 0,
+      'forced eviction - pages evicted that were clean count': 0,
+      'forced eviction - pages evicted that were clean time (usecs)': 0,
+      'forced eviction - pages evicted that were dirty count': 47,
+      'forced eviction - pages evicted that were dirty time (usecs)': 2383,
+      'forced eviction - pages selected because of a large number of updates to a single item': 0,
+      'forced eviction - pages selected because of too many deleted items count': 1,
+      'forced eviction - pages selected count': 48,
+      'forced eviction - pages selected unable to be evicted count': 1,
+      'forced eviction - pages selected unable to be evicted time': 12,
+      'hazard pointer blocked page eviction': 212,
+      'hazard pointer check calls': 4808718,
+      'hazard pointer check entries walked': 40065897,
+      'hazard pointer maximum array length': 9,
+      'history store table insert calls': 0,
+      'history store table insert calls that returned restart': 0,
+      'history store table max on-disk size': 0,
+      'history store table on-disk size': 4096,
+      'history store table out-of-order resolved updates that lose their durable timestamp': 0,
+      'history store table out-of-order updates that were fixed up by reinserting with the fixed timestamp': 0,
+      'history store table reads': 0,
+      'history store table reads missed': 0,
+      'history store table reads requiring squashed modifies': 0,
+      'history store table truncation by rollback to stable to remove an unstable update': 0,
+      'history store table truncation by rollback to stable to remove an update': 0,
+      'history store table truncation to remove an update': 0,
+      'history store table truncation to remove range of updates due to key being removed from the data page during reconciliation': 0,
+      'history store table truncation to remove range of updates due to out-of-order timestamp update on data page': 0,
+      'history store table writes requiring squashed modifies': 0,
+      'in-memory page passed criteria to be split': 88,
+      'in-memory page splits': 44,
+      'internal pages evicted': 0,
+      'internal pages queued for eviction': 0,
+      'internal pages seen by eviction walk': 0,
+      'internal pages seen by eviction walk that are already queued': 0,
+      'internal pages split during eviction': 0,
+      'leaf pages split during eviction': 40791,
+      'locate a random in-mem ref by examining all entries on the root page': 0,
+      'maximum bytes configured': 1610612736,
+      'maximum milliseconds spent at a single eviction': 0,
+      'maximum page size seen at eviction': 0,
+      'modified pages evicted': 4807563,
+      'modified pages evicted by application threads': 25057,
+      'operations timed out waiting for space in cache': 0,
+      'overflow pages read into cache': 0,
+      'page split during eviction deepened the tree': 0,
+      'page written requiring history store records': 0,
+      'pages currently held in the cache': 31,
+      'pages evicted by application threads': 25059,
+      'pages evicted in parallel with checkpoint': 2072508,
+      'pages queued for eviction': 18329800,
+      'pages queued for eviction post lru sorting': 18714937,
+      'pages queued for urgent eviction': 1391,
+      'pages queued for urgent eviction during walk': 3,
+      'pages queued for urgent eviction from history store due to high dirty content': 0,
+      'pages read into cache': 1156598,
+      'pages read into cache after truncate': 1380,
+      'pages read into cache after truncate in prepare state': 0,
+      'pages removed from the ordinary queue to be queued for urgent eviction': 0,
+      'pages requested from the cache': 15668262,
+      'pages seen by eviction walk': 58059260,
+      'pages seen by eviction walk that are already queued': 247955,
+      'pages selected for eviction unable to be evicted': 1155,
+      'pages selected for eviction unable to be evicted because of active children on an internal page': 0,
+      'pages selected for eviction unable to be evicted because of failure in reconciliation': 1,
+      'pages selected for eviction unable to be evicted because of race between checkpoint and out of order timestamps handling': 0,
+      'pages walked for eviction': 65673072,
+      'pages written from cache': 4931145,
+      'pages written requiring in-memory restoration': 3652462,
+      'percentage overhead': 8,
+      'the number of times full update inserted to history store': 0,
+      'the number of times reverse modify inserted to history store': 0,
+      'total milliseconds spent inside reentrant history store evictions in a reconciliation': 0,
+      'tracked bytes belonging to internal pages in the cache': 7143,
+      'tracked bytes belonging to leaf pages in the cache': 123593,
+      'tracked dirty bytes in the cache': 0,
+      'tracked dirty pages in the cache': 0,
+      'unmodified pages evicted': 0
+    },
+    capacity: {
+      'background fsync file handles considered': 0,
+      'background fsync file handles synced': 0,
+      'background fsync time (msecs)': 0,
+      'bytes read': Long('12891045888'),
+      'bytes written for checkpoint': 1131885609,
+      'bytes written for eviction': Long('47077721394'),
+      'bytes written for log': 1627767168,
+      'bytes written total': Long('49837374171'),
+      'threshold to call fsync': 0,
+      'time waiting due to total capacity (usecs)': 0,
+      'time waiting during checkpoint (usecs)': 0,
+      'time waiting during eviction (usecs)': 0,
+      'time waiting during logging (usecs)': 0,
+      'time waiting during read (usecs)': 0
+    },
+    'checkpoint-cleanup': {
+      'pages added for eviction': 36463,
+      'pages removed': 26,
+      'pages skipped during tree walk': 86899,
+      'pages visited': 646572
+    },
+    connection: {
+      'auto adjusting condition resets': 27392,
+      'auto adjusting condition wait calls': 1064638,
+      'auto adjusting condition wait raced to update timeout and skipped updating': 0,
+      'detected system time went backwards': 0,
+      'files currently open': 23,
+      'hash bucket array size for data handles': 512,
+      'hash bucket array size general': 512,
+      'memory allocations': 209842914,
+      'memory frees': 209841368,
+      'memory re-allocations': 7504895,
+      'pthread mutex condition wait calls': 3653797,
+      'pthread mutex shared lock read-lock calls': 23370123,
+      'pthread mutex shared lock write-lock calls': 846323,
+      'total fsync I/Os': 21375,
+      'total read I/Os': 1163646,
+      'total write I/Os': 4968932
+    },
+    cursor: {
+      'Total number of deleted pages skipped during tree walk': 0,
+      'Total number of entries skipped by cursor next calls': 1277,
+      'Total number of entries skipped by cursor prev calls': 79,
+      'Total number of entries skipped to position the history store cursor': 0,
+      'Total number of in-memory deleted pages skipped during tree walk': 1379,
+      'Total number of times a search near has exited due to prefix config': 0,
+      'bulk cursor count': 0,
+      'cached cursor count': 15,
+      'cursor bulk loaded cursor insert calls': 0,
+      'cursor close calls that result in cache': 9464866,
+      'cursor create calls': 451,
+      'cursor insert calls': 6950337,
+      'cursor insert key and value bytes': 648749294,
+      'cursor modify calls': 0,
+      'cursor modify key and value bytes affected': 0,
+      'cursor modify value bytes modified': 0,
+      'cursor next calls': 1908262,
+      'cursor next calls that skip due to a globally visible history store tombstone': 0,
+      'cursor next calls that skip greater than or equal to 100 entries': 0,
+      'cursor next calls that skip less than 100 entries': 1908260,
+      'cursor operation restarted': 0,
+      'cursor prev calls': 2783,
+      'cursor prev calls that skip due to a globally visible history store tombstone': 0,
+      'cursor prev calls that skip greater than or equal to 100 entries': 0,
+      'cursor prev calls that skip less than 100 entries': 2783,
+      'cursor remove calls': 7183026,
+      'cursor remove key bytes removed': 519335444,
+      'cursor reserve calls': 0,
+      'cursor reset calls': 24574233,
+      'cursor search calls': 911565,
+      'cursor search history store calls': 0,
+      'cursor search near calls': 911684,
+      'cursor sweep buckets': 1993585,
+      'cursor sweep cursors closed': 10,
+      'cursor sweep cursors examined': 16340,
+      'cursor sweeps': 211251,
+      'cursor truncate calls': 0,
+      'cursor update calls': 0,
+      'cursor update key and value bytes': 0,
+      'cursor update value size change': 0,
+      'cursors reused from cache': 9464841,
+      'open cursor count': 6
+    },
+    'data-handle': {
+      'connection data handle size': 488,
+      'connection data handles currently active': 39,
+      'connection sweep candidate became referenced': 0,
+      'connection sweep dhandles closed': 0,
+      'connection sweep dhandles removed from hash list': 1674,
+      'connection sweep time-of-death sets': 22472,
+      'connection sweeps': 17066,
+      'connection sweeps skipped due to checkpoint gathering handles': 0,
+      'session dhandles swept': 112,
+      'session sweep attempts': 52596
+    },
+    lock: {
+      'checkpoint lock acquisitions': 2829,
+      'checkpoint lock application thread wait time (usecs)': 14,
+      'checkpoint lock internal thread wait time (usecs)': 0,
+      'dhandle lock application thread time waiting (usecs)': 0,
+      'dhandle lock internal thread time waiting (usecs)': 38498,
+      'dhandle read lock acquisitions': 1403600,
+      'dhandle write lock acquisitions': 3399,
+      'durable timestamp queue lock application thread time waiting (usecs)': 0,
+      'durable timestamp queue lock internal thread time waiting (usecs)': 0,
+      'durable timestamp queue read lock acquisitions': 0,
+      'durable timestamp queue write lock acquisitions': 0,
+      'metadata lock acquisitions': 2828,
+      'metadata lock application thread wait time (usecs)': 0,
+      'metadata lock internal thread wait time (usecs)': 0,
+      'read timestamp queue lock application thread time waiting (usecs)': 0,
+      'read timestamp queue lock internal thread time waiting (usecs)': 0,
+      'read timestamp queue read lock acquisitions': 0,
+      'read timestamp queue write lock acquisitions': 0,
+      'schema lock acquisitions': 2886,
+      'schema lock application thread wait time (usecs)': 12,
+      'schema lock internal thread wait time (usecs)': 0,
+      'table lock application thread time waiting for the table lock (usecs)': 0,
+      'table lock internal thread time waiting for the table lock (usecs)': 44496,
+      'table read lock acquisitions': 0,
+      'table write lock acquisitions': 44,
+      'txn global lock application thread time waiting (usecs)': 14491,
+      'txn global lock internal thread time waiting (usecs)': 63528,
+      'txn global read lock acquisitions': 3480317,
+      'txn global write lock acquisitions': 669180
+    },
+    log: {
+      'busy returns attempting to switch slots': 1473,
+      'force log remove time sleeping (usecs)': 0,
+      'log bytes of payload data': 476419727,
+      'log bytes written': 567009536,
+      'log files manually zero-filled': 0,
+      'log flush operations': 1692588,
+      'log force write operations': 1898352,
+      'log force write operations skipped': 1874898,
+      'log records compressed': 1767112,
+      'log records not compressed': 1493,
+      'log records too small to compress': 11539,
+      'log release advances write LSN': 2845,
+      'log scan operations': 6,
+      'log scan records requiring two reads': 0,
+      'log server thread advances write LSN': 24507,
+      'log server thread write LSN walk skipped': 1238758,
+      'log sync operations': 8361,
+      'log sync time duration (usecs)': 1330907598,
+      'log sync_dir operations': 6,
+      'log sync_dir time duration (usecs)': 8043492,
+      'log write operations': 1780144,
+      'logging bytes consolidated': 567007744,
+      'maximum log file size': 104857600,
+      'number of pre-allocated log files to create': 2,
+      'pre-allocated log files not ready and missed': 1,
+      'pre-allocated log files prepared': 7,
+      'pre-allocated log files used': 5,
+      'records processed by log scan': 15,
+      'slot close lost race': 0,
+      'slot close unbuffered waits': 0,
+      'slot closures': 27352,
+      'slot join atomic update races': 1,
+      'slot join calls atomic updates raced': 1,
+      'slot join calls did not yield': 1780138,
+      'slot join calls found active slot closed': 5,
+      'slot join calls slept': 1,
+      'slot join calls yielded': 6,
+      'slot join found active slot closed': 1107,
+      'slot joins yield time (usecs)': 66610,
+      'slot transitions unable to find free slot': 0,
+      'slot unbuffered writes': 0,
+      'total in-memory size of compressed records': 1270894796,
+      'total log buffer size': 33554432,
+      'total size of compressed records': 475526174,
+      'written slots coalesced': 0,
+      'yields waiting for previous log file close': 0
+    },
+    perf: {
+      'file system read latency histogram (bucket 1) - 10-49ms': 1791,
+      'file system read latency histogram (bucket 2) - 50-99ms': 560,
+      'file system read latency histogram (bucket 3) - 100-249ms': 246,
+      'file system read latency histogram (bucket 4) - 250-499ms': 61,
+      'file system read latency histogram (bucket 5) - 500-999ms': 21,
+      'file system read latency histogram (bucket 6) - 1000ms+': 0,
+      'file system write latency histogram (bucket 1) - 10-49ms': 39695,
+      'file system write latency histogram (bucket 2) - 50-99ms': 519,
+      'file system write latency histogram (bucket 3) - 100-249ms': 467,
+      'file system write latency histogram (bucket 4) - 250-499ms': 511,
+      'file system write latency histogram (bucket 5) - 500-999ms': 588,
+      'file system write latency histogram (bucket 6) - 1000ms+': 348,
+      'operation read latency histogram (bucket 1) - 100-249us': 220,
+      'operation read latency histogram (bucket 2) - 250-499us': 109,
+      'operation read latency histogram (bucket 3) - 500-999us': 121,
+      'operation read latency histogram (bucket 4) - 1000-9999us': 225,
+      'operation read latency histogram (bucket 5) - 10000us+': 12,
+      'operation write latency histogram (bucket 1) - 100-249us': 9982,
+      'operation write latency histogram (bucket 2) - 250-499us': 5107,
+      'operation write latency histogram (bucket 3) - 500-999us': 6589,
+      'operation write latency histogram (bucket 4) - 1000-9999us': 13085,
+      'operation write latency histogram (bucket 5) - 10000us+': 2875
+    },
+    reconciliation: {
+      'approximate byte size of timestamps in pages written': 236376,
+      'approximate byte size of transaction IDs in pages written': 329744,
+      'fast-path pages deleted': 0,
+      'leaf-page overflow keys': 0,
+      'maximum milliseconds spent in a reconciliation call': 0,
+      'maximum milliseconds spent in building a disk image in a reconciliation': 0,
+      'maximum milliseconds spent in moving updates to the history store in a reconciliation': 0,
+      'page reconciliation calls': 4931408,
+      'page reconciliation calls for eviction': 4801736,
+      'page reconciliation calls that resulted in values with prepared transaction metadata': 0,
+      'page reconciliation calls that resulted in values with timestamps': 13712,
+      'page reconciliation calls that resulted in values with transaction ids': 20738,
+      'pages deleted': 48439,
+      'pages written including an aggregated newest start durable timestamp ': 0,
+      'pages written including an aggregated newest stop durable timestamp ': 0,
+      'pages written including an aggregated newest stop timestamp ': 1,
+      'pages written including an aggregated newest stop transaction ID': 1,
+      'pages written including an aggregated newest transaction ID ': 140,
+      'pages written including an aggregated oldest start timestamp ': 0,
+      'pages written including an aggregated prepare': 0,
+      'pages written including at least one prepare state': 0,
+      'pages written including at least one start durable timestamp': 0,
+      'pages written including at least one start timestamp': 0,
+      'pages written including at least one start transaction ID': 7026,
+      'pages written including at least one stop durable timestamp': 0,
+      'pages written including at least one stop timestamp': 13726,
+      'pages written including at least one stop transaction ID': 13726,
+      'records written including a prepare state': 0,
+      'records written including a start durable timestamp': 0,
+      'records written including a start timestamp': 0,
+      'records written including a start transaction ID': 11671,
+      'records written including a stop durable timestamp': 0,
+      'records written including a stop timestamp': 29547,
+      'records written including a stop transaction ID': 29547,
+      'split bytes currently awaiting free': 0,
+      'split objects currently awaiting free': 0
+    },
+    session: {
+      'attempts to remove a local object and the object is in use': 0,
+      'flush_tier operation calls': 0,
+      'flush_tier tables skipped due to no checkpoint': 0,
+      'flush_tier tables switched': 0,
+      'local objects removed': 0,
+      'open session count': 15,
+      'session query timestamp calls': 0,
+      'table alter failed calls': 0,
+      'table alter successful calls': 0,
+      'table alter triggering checkpoint calls': 0,
+      'table alter unchanged and skipped': 0,
+      'table compact failed calls': 0,
+      'table compact failed calls due to cache pressure': 0,
+      'table compact running': 0,
+      'table compact skipped as process would not reduce file size': 0,
+      'table compact successful calls': 0,
+      'table compact timeout': 0,
+      'table create failed calls': 0,
+      'table create successful calls': 9,
+      'table drop failed calls': 0,
+      'table drop successful calls': 8,
+      'table rename failed calls': 0,
+      'table rename successful calls': 0,
+      'table salvage failed calls': 0,
+      'table salvage successful calls': 0,
+      'table truncate failed calls': 0,
+      'table truncate successful calls': 0,
+      'table verify failed calls': 0,
+      'table verify successful calls': 0,
+      'tiered operations dequeued and processed': 0,
+      'tiered operations scheduled': 0,
+      'tiered storage local retention time (secs)': 0
+    },
+    'thread-state': {
+      'active filesystem fsync calls': 0,
+      'active filesystem read calls': 0,
+      'active filesystem write calls': 0
+    },
+    'thread-yield': {
+      'application thread snapshot refreshed for eviction': 0,
+      'application thread time evicting (usecs)': 101536441,
+      'application thread time waiting for cache (usecs)': 148035986,
+      'connection close blocked waiting for transaction state stabilization': 0,
+      'connection close yielded for lsm manager shutdown': 0,
+      'data handle lock yielded': 0,
+      'get reference for page index and slot time sleeping (usecs)': 0,
+      'page access yielded due to prepare state change': 0,
+      'page acquire busy blocked': 1,
+      'page acquire eviction blocked': 0,
+      'page acquire locked blocked': 57465,
+      'page acquire read blocked': 0,
+      'page acquire time sleeping (usecs)': 55863200,
+      'page delete rollback time sleeping for state change (usecs)': 0,
+      'page reconciliation yielded due to child modification': 0
+    },
+    transaction: {
+      'Number of prepared updates': 0,
+      'Number of prepared updates committed': 0,
+      'Number of prepared updates repeated on the same key': 0,
+      'Number of prepared updates rolled back': 0,
+      'a reader raced with a prepared transaction commit and skipped an update or updates': 0,
+      'checkpoint has acquired a snapshot for its transaction': 0,
+      'oldest pinned transaction ID rolled back for eviction': 0,
+      'prepared transactions': 0,
+      'prepared transactions committed': 0,
+      'prepared transactions currently active': 0,
+      'prepared transactions rolled back': 0,
+      'query timestamp calls': 170595,
+      'race to read prepared update retry': 0,
+      'rollback to stable calls': 0,
+      'rollback to stable history store records with stop timestamps older than newer records': 0,
+      'rollback to stable inconsistent checkpoint': 0,
+      'rollback to stable keys removed': 0,
+      'rollback to stable keys restored': 0,
+      'rollback to stable pages visited': 0,
+      'rollback to stable restored tombstones from history store': 0,
+      'rollback to stable restored updates from history store': 0,
+      'rollback to stable skipping delete rle': 0,
+      'rollback to stable skipping stable rle': 0,
+      'rollback to stable sweeping history store keys': 0,
+      'rollback to stable tree walk skipping pages': 0,
+      'rollback to stable updates aborted': 0,
+      'rollback to stable updates removed from history store': 0,
+      'sessions scanned in each walk of concurrent sessions': 126268833,
+      'set timestamp calls': 0,
+      'set timestamp durable calls': 0,
+      'set timestamp durable updates': 0,
+      'set timestamp oldest calls': 0,
+      'set timestamp oldest updates': 0,
+      'set timestamp stable calls': 0,
+      'set timestamp stable updates': 0,
+      'transaction begins': 1781356,
+      'transaction checkpoint currently running': 0,
+      'transaction checkpoint currently running for history store file': 0,
+      'transaction checkpoint generation': 2829,
+      'transaction checkpoint history store file duration (usecs)': 7,
+      'transaction checkpoint max time (msecs)': 101894,
+      'transaction checkpoint min time (msecs)': 17,
+      'transaction checkpoint most recent duration for gathering all handles (usecs)': 201,
+      'transaction checkpoint most recent duration for gathering applied handles (usecs)': 30,
+      'transaction checkpoint most recent duration for gathering skipped handles (usecs)': 97,
+      'transaction checkpoint most recent handles applied': 1,
+      'transaction checkpoint most recent handles skipped': 18,
+      'transaction checkpoint most recent handles walked': 40,
+      'transaction checkpoint most recent time (msecs)': 43,
+      'transaction checkpoint prepare currently running': 0,
+      'transaction checkpoint prepare max time (msecs)': 2,
+      'transaction checkpoint prepare min time (msecs)': 0,
+      'transaction checkpoint prepare most recent time (msecs)': 0,
+      'transaction checkpoint prepare total time (msecs)': 70,
+      'transaction checkpoint scrub dirty target': 0,
+      'transaction checkpoint scrub time (msecs)': 201,
+      'transaction checkpoint stop timing stress active': 0,
+      'transaction checkpoint total time (msecs)': 856391,
+      'transaction checkpoints': 2828,
+      'transaction checkpoints due to obsolete pages': 0,
+      'transaction checkpoints skipped because database was clean': 0,
+      'transaction fsync calls for checkpoint after allocating the transaction ID': 2828,
+      'transaction fsync duration for checkpoint after allocating the transaction ID (usecs)': 15535,
+      'transaction range of IDs currently pinned': 0,
+      'transaction range of IDs currently pinned by a checkpoint': 0,
+      'transaction range of timestamps currently pinned': 0,
+      'transaction range of timestamps pinned by a checkpoint': 0,
+      'transaction range of timestamps pinned by the oldest active read timestamp': 0,
+      'transaction range of timestamps pinned by the oldest timestamp': 0,
+      'transaction read timestamp of the oldest active reader': 0,
+      'transaction rollback to stable currently running': 0,
+      'transaction walk of concurrent sessions': 7652582,
+      'transactions committed': 1765929,
+      'transactions rolled back': 15427,
+      'update conflicts': 0
+    },
+    concurrentTransactions: {
+      write: {
+        out: 0,
+        available: 128,
+        totalTickets: 128
+      },
+      read: {
+        out: 0,
+        available: 128,
+        totalTickets: 128
+      }
+    },
+    'snapshot-window-settings': {
+      'total number of SnapshotTooOld errors': Long('0'),
+      'minimum target snapshot window size in seconds': 300,
+      'current available snapshot window size in seconds': 0,
+      'latest majority snapshot timestamp available': 'Jan  1 00:00:00:0',
+      'oldest majority snapshot timestamp available': 'Jan  1 00:00:00:0',
+      'pinned timestamp requests': 0,
+      'min pinned timestamp': Timestamp({ t: 4294967295, i: 4294967295 })
+    },
+    oplog: {
+      'visibility timestamp': Timestamp({ t: 0, i: 0 })
+    }
+  },
+  mem: {
+    bits: 64,
+    resident: 919,
+    virtual: 3396,
+    supported: true
+  },
+  metrics: {
+    apiVersions: {
+      'mongosh 2.3.2': [
+        'default'
+      ]
+    },
+    abortExpiredTransactions: {
+      passes: Long('5687')
+    },
+    aggStageCounters: {
+      '$_addReshardingResumeId': Long('0'),
+      '$_internalAllCollectionStats': Long('0'),
+      '$_internalApplyOplogUpdate': Long('0'),
+      '$_internalBoundedSort': Long('0'),
+      '$_internalChangeStreamAddPostImage': Long('0'),
+      '$_internalChangeStreamAddPreImage': Long('0'),
+      '$_internalChangeStreamCheckInvalidate': Long('0'),
+      '$_internalChangeStreamCheckResumability': Long('0'),
+      '$_internalChangeStreamCheckTopologyChange': Long('0'),
+      '$_internalChangeStreamHandleTopologyChange': Long('0'),
+      '$_internalChangeStreamOplogMatch': Long('0'),
+      '$_internalChangeStreamTransform': Long('0'),
+      '$_internalChangeStreamUnwindTransaction': Long('0'),
+      '$_internalComputeGeoNearDistance': Long('0'),
+      '$_internalConvertBucketIndexStats': Long('0'),
+      '$_internalDensify': Long('0'),
+      '$_internalFindAndModifyImageLookup': Long('0'),
+      '$_internalInhibitOptimization': Long('0'),
+      '$_internalReshardingIterateTransaction': Long('0'),
+      '$_internalReshardingOwnershipMatch': Long('0'),
+      '$_internalSetWindowFields': Long('0'),
+      '$_internalShardServerInfo': Long('0'),
+      '$_internalShredDocuments': Long('0'),
+      '$_internalSplitPipeline': Long('0'),
+      '$_internalStreamingGroup': Long('0'),
+      '$_internalUnpackBucket': Long('0'),
+      '$_unpackBucket': Long('0'),
+      '$addFields': Long('0'),
+      '$backupCursor': Long('0'),
+      '$backupCursorExtend': Long('0'),
+      '$bucket': Long('0'),
+      '$bucketAuto': Long('0'),
+      '$changeStream': Long('0'),
+      '$changeStreamSplitLargeEvent': Long('0'),
+      '$collStats': Long('0'),
+      '$count': Long('0'),
+      '$currentOp': Long('0'),
+      '$densify': Long('0'),
+      '$documents': Long('0'),
+      '$facet': Long('0'),
+      '$fill': Long('0'),
+      '$geoNear': Long('0'),
+      '$graphLookup': Long('0'),
+      '$group': Long('44'),
+      '$indexStats': Long('0'),
+      '$limit': Long('0'),
+      '$listCachedAndActiveUsers': Long('0'),
+      '$listCatalog': Long('0'),
+      '$listLocalSessions': Long('0'),
+      '$listSearchIndexes': Long('0'),
+      '$listSessions': Long('0'),
+      '$lookup': Long('0'),
+      '$match': Long('44'),
+      '$merge': Long('0'),
+      '$mergeCursors': Long('0'),
+      '$operationMetrics': Long('0'),
+      '$out': Long('0'),
+      '$planCacheStats': Long('0'),
+      '$project': Long('0'),
+      '$queryStats': Long('0'),
+      '$queue': Long('0'),
+      '$redact': Long('0'),
+      '$replaceRoot': Long('0'),
+      '$replaceWith': Long('0'),
+      '$sample': Long('0'),
+      '$search': Long('0'),
+      '$searchMeta': Long('0'),
+      '$set': Long('84'),
+      '$setVariableFromSubPipeline': Long('0'),
+      '$setWindowFields': Long('0'),
+      '$shardedDataDistribution': Long('0'),
+      '$skip': Long('0'),
+      '$sort': Long('0'),
+      '$sortByCount': Long('0'),
+      '$unionWith': Long('0'),
+      '$unset': Long('0'),
+      '$unwind': Long('0'),
+      '$vectorSearch': Long('0')
+    },
+    changeStreams: {
+      largeEventsFailed: Long('0'),
+      largeEventsSplit: Long('0')
+    },
+    commands: {
+      '<UNKNOWN>': Long('43'),
+      _addShard: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrAbortReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrAddShard: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrAddShardToZone: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrBalancerCollectionStatus: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrBalancerStart: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrBalancerStatus: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrBalancerStop: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCleanupReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrClearJumboFlag: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCollMod: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCommitChunkMigration: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCommitChunkSplit: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCommitChunksMerge: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCommitMovePrimary: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCommitReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrConfigureCollectionBalancing: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrCreateDatabase: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrEnsureChunkVersionIsGreaterThan: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrMoveChunk: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrMoveRange: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRefineCollectionShardKey: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRemoveChunks: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRemoveShard: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRemoveShardFromZone: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRemoveTags: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRenameCollectionMetadata: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRepairShardedCollectionChunksHistory: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrRunRestore: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrSetAllowMigrations: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrSetClusterParameter: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrSetUserWriteBlockMode: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _configsvrUpdateZoneKeyRange: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _flushDatabaseCacheUpdates: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _flushDatabaseCacheUpdatesWithWriteConcern: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _flushReshardingStateChange: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _flushRoutingTableCacheUpdates: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _flushRoutingTableCacheUpdatesWithWriteConcern: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _getNextSessionMods: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _getUserCacheGeneration: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _isSelf: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _killOperations: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _mergeAuthzCollections: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _migrateClone: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _recvChunkAbort: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _recvChunkCommit: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _recvChunkReleaseCritSec: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _recvChunkStart: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _recvChunkStatus: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrAbortReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCleanupReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCloneCatalogData: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCollMod: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCollModParticipant: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCommitReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCompactStructuredEncryptionData: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCreateCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrCreateCollectionParticipant: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrDropCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrDropCollectionIfUUIDNotMatching: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrDropCollectionParticipant: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrDropDatabase: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrDropDatabaseParticipant: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrDropIndexes: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrGetStatsForBalancing: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrJoinMigrations: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrMovePrimary: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrMoveRange: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrParticipantBlock: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrRefineCollectionShardKey: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrRenameCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrRenameCollectionParticipant: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrRenameCollectionParticipantUnblock: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrReshardCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrReshardingOperationTime: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrSetAllowMigrations: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrSetClusterParameter: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _shardsvrSetUserWriteBlockMode: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      _transferMods: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      abortShardSplit: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      abortTransaction: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      aggregate: {
+        failed: Long('0'),
+        total: Long('44')
+      },
+      appendOplogNote: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      applyOps: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      authenticate: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      autoSplitVector: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      availableQueryOptions: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      buildInfo: {
+        failed: Long('0'),
+        total: Long('43')
+      },
+      checkShardingIndex: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      cleanupOrphaned: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      cloneCollectionAsCapped: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterAbortTransaction: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterAggregate: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterCommitTransaction: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterDelete: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterFind: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterGetMore: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterInsert: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      clusterUpdate: {
+        arrayFilters: Long('0'),
+        failed: Long('0'),
+        pipeline: Long('0'),
+        total: Long('0')
+      },
+      collMod: {
+        failed: Long('0'),
+        total: Long('0'),
+        validator: {
+          failed: Long('0'),
+          jsonSchema: Long('0'),
+          total: Long('0')
+        }
+      },
+      collStats: {
+        failed: Long('0'),
+        total: Long('1')
+      },
+      commitShardSplit: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      commitTransaction: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      compact: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      compactStructuredEncryptionData: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      connPoolStats: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      connPoolSync: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      connectionStatus: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      convertToCapped: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      coordinateCommitTransaction: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      count: {
+        failed: Long('0'),
+        total: Long('1')
+      },
+      create: {
+        failed: Long('0'),
+        total: Long('1'),
+        validator: {
+          failed: Long('0'),
+          jsonSchema: Long('0'),
+          total: Long('0')
+        }
+      },
+      createBackup: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      createIndexes: {
+        failed: Long('0'),
+        total: Long('6')
+      },
+      createRole: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      createUser: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      currentOp: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dataSize: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dbCheck: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dbHash: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dbStats: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      delete: {
+        failed: Long('0'),
+        total: Long('4')
+      },
+      distinct: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      donorAbortMigration: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      donorForgetMigration: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      donorStartMigration: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      driverOIDTest: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      drop: {
+        failed: Long('0'),
+        total: Long('1')
+      },
+      dropAllRolesFromDatabase: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dropAllUsersFromDatabase: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dropConnections: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dropDatabase: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dropIndexes: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dropRole: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      dropUser: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      endSessions: {
+        failed: Long('0'),
+        total: Long('3')
+      },
+      explain: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      features: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      filemd5: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      find: {
+        failed: Long('0'),
+        total: Long('579')
+      },
+      findAndModify: {
+        arrayFilters: Long('0'),
+        failed: Long('0'),
+        pipeline: Long('0'),
+        total: Long('0')
+      },
+      flushRouterConfig: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      forgetShardSplit: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      fsync: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      fsyncUnlock: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getClusterParameter: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getCmdLineOpts: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getDatabaseVersion: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getDefaultRWConcern: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getDiagnosticData: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getLastError: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getLog: {
+        failed: Long('0'),
+        total: Long('1')
+      },
+      getMore: {
+        failed: Long('0'),
+        total: Long('1')
+      },
+      getParameter: {
+        failed: Long('0'),
+        total: Long('43')
+      },
+      getShardMap: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getShardVersion: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      getnonce: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      grantPrivilegesToRole: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      grantRolesToRole: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      grantRolesToUser: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      hello: {
+        failed: Long('40'),
+        total: Long('353')
+      },
+      hostInfo: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      insert: {
+        failed: Long('0'),
+        total: Long('867826')
+      },
+      internalRenameIfOptionsAndIndexesMatch: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      invalidateUserCache: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      isMaster: {
+        failed: Long('0'),
+        total: Long('243')
+      },
+      killAllSessions: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      killAllSessionsByPattern: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      killCursors: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      killOp: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      killSessions: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      listCollections: {
+        failed: Long('0'),
+        total: Long('6')
+      },
+      listCommands: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      listDatabases: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      listIndexes: {
+        failed: Long('0'),
+        total: Long('1138')
+      },
+      lockInfo: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      logApplicationMessage: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      logRotate: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      logout: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      mapReduce: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      mergeChunks: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      ping: {
+        failed: Long('0'),
+        total: Long('5')
+      },
+      planCacheClear: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      planCacheClearFilters: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      planCacheListFilters: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      planCacheSetFilter: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      prepareTransaction: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      profile: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      reIndex: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      recipientForgetMigration: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      recipientSyncData: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      recipientVoteImportedFiles: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      refreshSessions: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      renameCollection: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetAbortPrimaryCatchUp: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetFreeze: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetGetConfig: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetGetRBID: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetGetStatus: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetHeartbeat: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetInitiate: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetMaintenance: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetReconfig: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetRequestVotes: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetResizeOplog: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetStepDown: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetStepDownWithForce: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetStepUp: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetSyncFrom: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      replSetUpdatePosition: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      revokePrivilegesFromRole: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      revokeRolesFromRole: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      revokeRolesFromUser: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      rolesInfo: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      rotateCertificates: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      saslContinue: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      saslStart: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      serverStatus: {
+        failed: Long('0'),
+        total: Long('6')
+      },
+      setClusterParameter: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      setDefaultRWConcern: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      setFeatureCompatibilityVersion: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      setIndexCommitQuorum: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      setParameter: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      setProfilingFilterGlobally: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      setShardVersion: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      setUserWriteBlockMode: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      shardingState: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      shutdown: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      splitChunk: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      splitVector: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      startRecordingTraffic: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      startSession: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      stopRecordingTraffic: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      top: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      update: {
+        arrayFilters: Long('0'),
+        failed: Long('0'),
+        pipeline: Long('84'),
+        total: Long('10')
+      },
+      updateRole: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      updateUser: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      usersInfo: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      validate: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      validateDBMetadata: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      voteCommitIndexBuild: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      waitForFailPoint: {
+        failed: Long('0'),
+        total: Long('0')
+      },
+      whatsmyuri: {
+        failed: Long('0'),
+        total: Long('0')
+      }
+    },
+    cursor: {
+      moreThanOneBatch: Long('1'),
+      timedOut: Long('0'),
+      totalOpened: Long('45'),
+      lifespan: {
+        greaterThanOrEqual10Minutes: Long('1'),
+        lessThan10Minutes: Long('0'),
+        lessThan15Seconds: Long('0'),
+        lessThan1Minute: Long('0'),
+        lessThan1Second: Long('44'),
+        lessThan30Seconds: Long('0'),
+        lessThan5Seconds: Long('0')
+      },
+      open: {
+        noTimeout: Long('0'),
+        pinned: Long('0'),
+        total: Long('0')
+      }
+    },
+    document: {
+      deleted: Long('897826'),
+      inserted: Long('867833'),
+      returned: Long('99448'),
+      updated: Long('6')
+    },
+    dotsAndDollarsFields: {
+      inserts: Long('0'),
+      updates: Long('0')
+    },
+    getLastError: {
+      wtime: {
+        num: 0,
+        totalMillis: 0
+      },
+      wtimeouts: Long('0'),
+      default: {
+        unsatisfiable: Long('0'),
+        wtimeouts: Long('0')
+      }
+    },
+    mongos: {
+      cursor: {
+        moreThanOneBatch: Long('0'),
+        totalOpened: Long('0')
+      }
+    },
+    operation: {
+      scanAndOrder: Long('0'),
+      temporarilyUnavailableErrors: Long('0'),
+      temporarilyUnavailableErrorsConvertedToWriteConflict: Long('0'),
+      temporarilyUnavailableErrorsEscaped: Long('0'),
+      transactionTooLargeForCacheErrors: Long('0'),
+      transactionTooLargeForCacheErrorsConvertedToWriteConflict: Long('0'),
+      writeConflicts: Long('0')
+    },
+    operatorCounters: {
+      expressions: {
+        '$_internalFindAllValuesAtPath': Long('0'),
+        '$_internalFleEq': Long('0'),
+        '$_internalJsEmit': Long('0'),
+        '$_internalKeyStringValue': Long('0'),
+        '$abs': Long('0'),
+        '$acos': Long('0'),
+        '$acosh': Long('0'),
+        '$add': Long('0'),
+        '$allElementsTrue': Long('0'),
+        '$and': Long('0'),
+        '$anyElementTrue': Long('0'),
+        '$arrayElemAt': Long('0'),
+        '$arrayToObject': Long('0'),
+        '$asin': Long('0'),
+        '$asinh': Long('0'),
+        '$atan': Long('0'),
+        '$atan2': Long('0'),
+        '$atanh': Long('0'),
+        '$avg': Long('0'),
+        '$binarySize': Long('0'),
+        '$bsonSize': Long('0'),
+        '$ceil': Long('0'),
+        '$cmp': Long('0'),
+        '$concat': Long('0'),
+        '$concatArrays': Long('0'),
+        '$cond': Long('0'),
+        '$const': Long('0'),
+        '$convert': Long('0'),
+        '$cos': Long('0'),
+        '$cosh': Long('0'),
+        '$dateAdd': Long('0'),
+        '$dateDiff': Long('0'),
+        '$dateFromParts': Long('0'),
+        '$dateFromString': Long('0'),
+        '$dateSubtract': Long('0'),
+        '$dateToParts': Long('0'),
+        '$dateToString': Long('0'),
+        '$dateTrunc': Long('0'),
+        '$dayOfMonth': Long('0'),
+        '$dayOfWeek': Long('0'),
+        '$dayOfYear': Long('0'),
+        '$degreesToRadians': Long('0'),
+        '$divide': Long('0'),
+        '$eq': Long('0'),
+        '$exp': Long('0'),
+        '$filter': Long('0'),
+        '$first': Long('0'),
+        '$firstN': Long('0'),
+        '$floor': Long('0'),
+        '$function': Long('0'),
+        '$getField': Long('0'),
+        '$gt': Long('0'),
+        '$gte': Long('0'),
+        '$hour': Long('0'),
+        '$ifNull': Long('0'),
+        '$in': Long('0'),
+        '$indexOfArray': Long('0'),
+        '$indexOfBytes': Long('0'),
+        '$indexOfCP': Long('0'),
+        '$isArray': Long('0'),
+        '$isNumber': Long('0'),
+        '$isoDayOfWeek': Long('0'),
+        '$isoWeek': Long('0'),
+        '$isoWeekYear': Long('0'),
+        '$last': Long('0'),
+        '$lastN': Long('0'),
+        '$let': Long('0'),
+        '$literal': Long('0'),
+        '$ln': Long('0'),
+        '$log': Long('0'),
+        '$log10': Long('0'),
+        '$lt': Long('0'),
+        '$lte': Long('0'),
+        '$ltrim': Long('0'),
+        '$map': Long('0'),
+        '$max': Long('0'),
+        '$maxN': Long('0'),
+        '$mergeObjects': Long('0'),
+        '$meta': Long('0'),
+        '$millisecond': Long('0'),
+        '$min': Long('0'),
+        '$minN': Long('0'),
+        '$minute': Long('0'),
+        '$mod': Long('0'),
+        '$month': Long('0'),
+        '$multiply': Long('0'),
+        '$ne': Long('0'),
+        '$not': Long('0'),
+        '$objectToArray': Long('0'),
+        '$or': Long('0'),
+        '$pow': Long('0'),
+        '$radiansToDegrees': Long('0'),
+        '$rand': Long('0'),
+        '$range': Long('0'),
+        '$reduce': Long('0'),
+        '$regexFind': Long('0'),
+        '$regexFindAll': Long('0'),
+        '$regexMatch': Long('0'),
+        '$replaceAll': Long('0'),
+        '$replaceOne': Long('0'),
+        '$reverseArray': Long('0'),
+        '$round': Long('0'),
+        '$rtrim': Long('0'),
+        '$second': Long('0'),
+        '$setDifference': Long('0'),
+        '$setEquals': Long('0'),
+        '$setField': Long('0'),
+        '$setIntersection': Long('0'),
+        '$setIsSubset': Long('0'),
+        '$setUnion': Long('0'),
+        '$sin': Long('0'),
+        '$sinh': Long('0'),
+        '$size': Long('0'),
+        '$slice': Long('0'),
+        '$sortArray': Long('0'),
+        '$split': Long('0'),
+        '$sqrt': Long('0'),
+        '$stdDevPop': Long('0'),
+        '$stdDevSamp': Long('0'),
+        '$strLenBytes': Long('0'),
+        '$strLenCP': Long('0'),
+        '$strcasecmp': Long('0'),
+        '$substr': Long('0'),
+        '$substrBytes': Long('0'),
+        '$substrCP': Long('0'),
+        '$subtract': Long('0'),
+        '$sum': Long('0'),
+        '$switch': Long('0'),
+        '$tan': Long('0'),
+        '$tanh': Long('0'),
+        '$toBool': Long('0'),
+        '$toDate': Long('0'),
+        '$toDecimal': Long('0'),
+        '$toDouble': Long('0'),
+        '$toHashedIndexKey': Long('0'),
+        '$toInt': Long('0'),
+        '$toLong': Long('0'),
+        '$toLower': Long('0'),
+        '$toObjectId': Long('0'),
+        '$toString': Long('0'),
+        '$toUpper': Long('0'),
+        '$trim': Long('0'),
+        '$trunc': Long('0'),
+        '$tsIncrement': Long('0'),
+        '$tsSecond': Long('0'),
+        '$type': Long('0'),
+        '$unsetField': Long('0'),
+        '$week': Long('0'),
+        '$year': Long('0'),
+        '$zip': Long('0')
+      },
+      groupAccumulators: {
+        '$_internalJsReduce': Long('0'),
+        '$accumulator': Long('0'),
+        '$addToSet': Long('0'),
+        '$avg': Long('0'),
+        '$bottom': Long('0'),
+        '$bottomN': Long('0'),
+        '$count': Long('0'),
+        '$first': Long('0'),
+        '$firstN': Long('0'),
+        '$last': Long('0'),
+        '$lastN': Long('0'),
+        '$max': Long('0'),
+        '$maxN': Long('0'),
+        '$mergeObjects': Long('0'),
+        '$min': Long('0'),
+        '$minN': Long('0'),
+        '$push': Long('0'),
+        '$stdDevPop': Long('0'),
+        '$stdDevSamp': Long('0'),
+        '$sum': Long('44'),
+        '$top': Long('0'),
+        '$topN': Long('0')
+      },
+      match: {
+        '$all': Long('0'),
+        '$alwaysFalse': Long('0'),
+        '$alwaysTrue': Long('0'),
+        '$and': Long('0'),
+        '$bitsAllClear': Long('0'),
+        '$bitsAllSet': Long('0'),
+        '$bitsAnyClear': Long('0'),
+        '$bitsAnySet': Long('0'),
+        '$comment': Long('0'),
+        '$elemMatch': Long('0'),
+        '$eq': Long('43'),
+        '$exists': Long('0'),
+        '$expr': Long('0'),
+        '$geoIntersects': Long('0'),
+        '$geoWithin': Long('0'),
+        '$gt': Long('0'),
+        '$gte': Long('0'),
+        '$in': Long('8'),
+        '$jsonSchema': Long('0'),
+        '$lt': Long('570'),
+        '$lte': Long('0'),
+        '$mod': Long('0'),
+        '$ne': Long('0'),
+        '$near': Long('0'),
+        '$nearSphere': Long('0'),
+        '$nin': Long('0'),
+        '$nor': Long('0'),
+        '$not': Long('0'),
+        '$or': Long('0'),
+        '$regex': Long('0'),
+        '$sampleRate': Long('0'),
+        '$size': Long('0'),
+        '$text': Long('0'),
+        '$type': Long('0'),
+        '$where': Long('0')
+      },
+      windowAccumulators: {
+        '$addToSet': Long('0'),
+        '$avg': Long('0'),
+        '$bottom': Long('0'),
+        '$bottomN': Long('0'),
+        '$count': Long('0'),
+        '$covariancePop': Long('0'),
+        '$covarianceSamp': Long('0'),
+        '$denseRank': Long('0'),
+        '$derivative': Long('0'),
+        '$documentNumber': Long('0'),
+        '$expMovingAvg': Long('0'),
+        '$first': Long('0'),
+        '$firstN': Long('0'),
+        '$integral': Long('0'),
+        '$last': Long('0'),
+        '$lastN': Long('0'),
+        '$linearFill': Long('0'),
+        '$locf': Long('0'),
+        '$max': Long('0'),
+        '$maxN': Long('0'),
+        '$min': Long('0'),
+        '$minN': Long('0'),
+        '$push': Long('0'),
+        '$rank': Long('0'),
+        '$shift': Long('0'),
+        '$stdDevPop': Long('0'),
+        '$stdDevSamp': Long('0'),
+        '$sum': Long('0'),
+        '$top': Long('0'),
+        '$topN': Long('0')
+      }
+    },
+    query: {
+      allowDiskUseFalse: Long('0'),
+      deleteManyCount: Long('5'),
+      externalRetryableWriteCount: Long('0'),
+      internalRetryableWriteCount: Long('0'),
+      planCacheTotalSizeEstimateBytes: Long('0'),
+      retryableInternalTransactionCount: Long('0'),
+      updateDeleteManyDocumentsMaxCount: Long('897824'),
+      updateDeleteManyDocumentsTotalCount: Long('897826'),
+      updateDeleteManyDurationMaxMs: Long('342830'),
+      updateDeleteManyDurationTotalMs: Long('342832'),
+      updateManyCount: Long('0'),
+      updateOneOpStyleBroadcastWithExactIDCount: Long('0'),
+      multiPlanner: {
+        classicCount: Long('0'),
+        classicMicros: Long('0'),
+        classicWorks: Long('0'),
+        sbeCount: Long('0'),
+        sbeMicros: Long('0'),
+        sbeNumReads: Long('0'),
+        histograms: {
+          classicMicros: [
+            {
+              lowerBound: Long('0'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1024'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4096'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16384'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('65536'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('262144'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1048576'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4194304'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16777216'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('67108864'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('268435456'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1073741824'),
+              count: Long('0')
+            }
+          ],
+          classicNumPlans: [
+            {
+              lowerBound: Long('0'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('2'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('8'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('32'),
+              count: Long('0')
+            }
+          ],
+          classicWorks: [
+            {
+              lowerBound: Long('0'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('128'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('256'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('512'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1024'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('2048'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4096'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('8192'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16384'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('32768'),
+              count: Long('0')
+            }
+          ],
+          sbeMicros: [
+            {
+              lowerBound: Long('0'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1024'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4096'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16384'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('65536'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('262144'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1048576'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4194304'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16777216'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('67108864'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('268435456'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1073741824'),
+              count: Long('0')
+            }
+          ],
+          sbeNumPlans: [
+            {
+              lowerBound: Long('0'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('2'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('8'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('32'),
+              count: Long('0')
+            }
+          ],
+          sbeNumReads: [
+            {
+              lowerBound: Long('0'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('128'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('256'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('512'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('1024'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('2048'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('4096'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('8192'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('16384'),
+              count: Long('0')
+            },
+            {
+              lowerBound: Long('32768'),
+              count: Long('0')
+            }
+          ]
+        }
+      },
+      queryFramework: {
+        aggregate: {
+          classicHybrid: Long('44'),
+          classicOnly: Long('0'),
+          cqf: Long('0'),
+          sbeHybrid: Long('0'),
+          sbeOnly: Long('0')
+        },
+        find: {
+          classic: Long('579'),
+          cqf: Long('0'),
+          sbe: Long('0')
+        }
+      }
+    },
+    queryExecutor: {
+      scanned: Long('15'),
+      scannedObjects: Long('1895115'),
+      collectionScans: {
+        nonTailable: Long('4'),
+        total: Long('4')
+      }
+    },
+    queryStats: {
+      numEvicted: Long('0'),
+      numHmacApplicationErrors: Long('0'),
+      numQueryStatsStoreWriteErrors: Long('0'),
+      numRateLimitedRequests: Long('0'),
+      queryStatsStoreSizeEstimateBytes: Long('0')
+    },
+    repl: {
+      executor: {
+        pool: {
+          inProgressCount: 0
+        },
+        queues: {
+          networkInProgress: 0,
+          sleepers: 0
+        },
+        unsignaledEvents: 0,
+        shuttingDown: false,
+        networkInterface: 'DEPRECATED: getDiagnosticString is deprecated in NetworkInterfaceTL'
+      },
+      apply: {
+        attemptsToBecomeSecondary: Long('0'),
+        batchSize: Long('0'),
+        batches: {
+          num: 0,
+          totalMillis: 0
+        },
+        ops: Long('0')
+      },
+      buffer: {
+        count: Long('0'),
+        maxSizeBytes: Long('0'),
+        sizeBytes: Long('0')
+      },
+      initialSync: {
+        completed: Long('0'),
+        failedAttempts: Long('0'),
+        failures: Long('0')
+      },
+      network: {
+        bytes: Long('0'),
+        getmores: {
+          num: 0,
+          totalMillis: 0,
+          numEmptyBatches: Long('0')
+        },
+        notPrimaryLegacyUnacknowledgedWrites: Long('0'),
+        notPrimaryUnacknowledgedWrites: Long('0'),
+        oplogGetMoresProcessed: {
+          num: 0,
+          totalMillis: 0
+        },
+        ops: Long('0'),
+        readersCreated: Long('0'),
+        replSetUpdatePosition: {
+          num: Long('0')
+        }
+      },
+      reconfig: {
+        numAutoReconfigsForRemovalOfNewlyAddedFields: Long('0')
+      },
+      stateTransition: {
+        lastStateTransition: '',
+        userOperationsKilled: Long('0'),
+        userOperationsRunning: Long('0')
+      },
+      syncSource: {
+        numSelections: Long('0'),
+        numSyncSourceChangesDueToSignificantlyCloserNode: Long('0'),
+        numTimesChoseDifferent: Long('0'),
+        numTimesChoseSame: Long('0'),
+        numTimesCouldNotFind: Long('0')
+      },
+      waiters: {
+        opTime: Long('0'),
+        replication: Long('0')
+      }
+    },
+    ttl: {
+      deletedDocuments: Long('132'),
+      passes: Long('2843')
+    }
+  },
+  ok: 1
+}

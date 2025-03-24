@@ -1,0 +1,7 @@
+db.createCollection('data_uuid');
+db.data_uuid.createIndex({ a: 1, b: 1 });
+db.data_uuid.createIndex({ b: 1, a: 1 });
+db.data_uuid.createIndex({ c: 1, a: 1 });
+db.data_uuid.createIndex({ c: 1, b: 1 });
+db.data_uuid.createIndex({ a: 1, c: 1, b: 1 });
+db.data_uuid.createIndex({ b: 1, c: 1, a: 1 });

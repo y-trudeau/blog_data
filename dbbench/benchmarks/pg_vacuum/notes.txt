@@ -1,0 +1,8 @@
+when: 2025-01-28-13:45
+pmm annotation: Vaccuum dbbench
+time: ~65min
+wiops: 520k
+riops: 181k
+
+Bandwidth at 16MB/s for most of the duration
+
