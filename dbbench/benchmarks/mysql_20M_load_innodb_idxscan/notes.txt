@@ -1,0 +1,3 @@
+about 165MB in change buffer
+While applying the change entries, time for scan was 12min 2s
+The 2nd scan, with no Change merges, took 3min and 52s
