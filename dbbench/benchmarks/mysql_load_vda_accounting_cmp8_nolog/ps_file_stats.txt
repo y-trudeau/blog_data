@@ -1,0 +1,44 @@
+mysql> select EVENT_NAME, sum(COUNT_WRITE), sum(SUM_NUMBER_OF_BYTES_WRITE) snbw from file_summary_by_instance group by event_name order by snbw desc limit 40;show global status like 'innodb_%written';select name,count from information_schema.innodb_metrics where name like 'log_padded';select sum(SUM_NUMBER_OF_BYTES_WRITE) from file_summary_by_instance;
++---------------------------------------+------------------+-------------+
+| EVENT_NAME                            | sum(COUNT_WRITE) | snbw        |
++---------------------------------------+------------------+-------------+
+| wait/io/file/innodb/innodb_dblwr_file |           535787 | 34761637888 |
+| wait/io/file/innodb/innodb_data_file  |          2125007 | 20842635264 |
+| wait/io/file/innodb/innodb_log_file   |          8060743 | 15295984128 |
+| wait/io/file/innodb/innodb_temp_file  |            30450 |   742817792 |
+| wait/io/file/sql/pid                  |                1 |           8 |
+| wait/io/file/sql/ERRMSG               |                0 |           0 |
+| wait/io/file/mysys/charset            |                0 |           0 |
+| wait/io/file/mysys/cnf                |                0 |           0 |
++---------------------------------------+------------------+-------------+
+8 rows in set (0.00 sec)
+
++----------------------------+-------------+
+| Variable_name              | Value       |
++----------------------------+-------------+
+| Innodb_data_written        | 33266932736 |
+| Innodb_dblwr_pages_written | 2121682     |
+| Innodb_os_log_written      | 9753491968  |
+| Innodb_pages_written       | 2148531     |
++----------------------------+-------------+
+4 rows in set (0.00 sec)
+
++------------+------------+
+| name       | count      |
++------------+------------+
+| log_padded | 5541383168 |
++------------+------------+
+1 row in set (0.01 sec)
+
++--------------------------------+
+| sum(SUM_NUMBER_OF_BYTES_WRITE) |
++--------------------------------+
+|                    71643075080 |
++--------------------------------+
+1 row in set (0.00 sec)
+
+rIop: 560104, readGB: 4, readMs: 1381104, wIop: 3802119, writeGB: 67, writeMs: 6201845, duration: 8777
+
+
+33266932736/2148531 ~ 15KB,  Innodb_data_written is before compression
+20842635264/33266932736 ~ 0.63

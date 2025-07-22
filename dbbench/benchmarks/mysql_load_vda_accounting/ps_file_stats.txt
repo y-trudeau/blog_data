@@ -1,0 +1,51 @@
+mysql> select EVENT_NAME, sum(COUNT_WRITE), sum(SUM_NUMBER_OF_BYTES_WRITE) snbw from file_summary_by_instance group by event_name order by snbw desc limit 40;show global status like 'innodb_%written';select name,count from information_schema.innodb_metrics where name like 'log_padded';select sum(SUM_NUMBER_OF_BYTES_WRITE) from file_summary_by_instance;
++---------------------------------------+------------------+-------------+
+| EVENT_NAME                            | sum(COUNT_WRITE) | snbw        |
++---------------------------------------+------------------+-------------+
+| wait/io/file/innodb/innodb_data_file  |          1287420 | 26715471872 |
+| wait/io/file/innodb/innodb_dblwr_file |           321761 | 21001273344 |
+| wait/io/file/innodb/innodb_log_file   |          3597559 | 14034051584 |
+| wait/io/file/innodb/innodb_temp_file  |              311 |    20496384 |
+| wait/io/file/sql/pid                  |                1 |           8 |
+| wait/io/file/sql/ERRMSG               |                0 |           0 |
+| wait/io/file/mysys/charset            |                0 |           0 |
+| wait/io/file/mysys/cnf                |                0 |           0 |
++---------------------------------------+------------------+-------------+
+8 rows in set (0.01 sec)
+
++----------------------------+-------------+
+| Variable_name              | Value       |
++----------------------------+-------------+
+| Innodb_data_written        | 35037571584 |
+| Innodb_dblwr_pages_written | 1281812     |
+| Innodb_os_log_written      | 10512074752 |
+| Innodb_pages_written       | 1282013     |
++----------------------------+-------------+
+4 rows in set (0.00 sec)
+
++------------+------------+
+| name       | count      |
++------------+------------+
+| log_padded | 3521167360 |
++------------+------------+
+1 row in set (0.00 sec)
+
++--------------------------------+
+| sum(SUM_NUMBER_OF_BYTES_WRITE) |
++--------------------------------+
+|                    61771293192 |
++--------------------------------+
+1 row in set (0.00 sec)
+
+root@dbbench:/mnt/dataset/blog_data/dbbench/benchmarks/mysql_load_vda_accounting# ../stats.sh .
+rIop: 768936, readGB: 11, readMs: 7765295, wIop: 2330044, writeGB: 58, writeMs: 9593582, duration: 4902
+
+Total writes ok, 58GB,  P_S is true
+What is Innodb_data_written? about 8GB unaccounted (data_written is calculated before compression, but not used here, file growth init?)
+-rw-r----- 1 mysql mysql 5.4G Apr  1 14:19 data_uuid.ibd
+
+So the 8GB unaccounted would be 5.4GB of file init + Writes to node pages?
+
+
+wait/io/file/innodb/innodb_log_file = log_padded + Innodb_os_log_written
+

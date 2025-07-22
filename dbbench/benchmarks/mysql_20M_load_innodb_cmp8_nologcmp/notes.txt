@@ -1,0 +1,3 @@
+Effective BP size with compressed pages ~ 294k pages, there was 170k pages uncompressed, which means 1-294/170 ~ 73% more
+
+
